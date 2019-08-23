@@ -1,0 +1,10 @@
+/* Raw CSS */
+body {
+  #publisher-textarea-wrapper > #button_container > span.markdownIndications > a {
+    color: fade-out($link-color, 0.4);
+  }
+
+  .left-navbar .hoverable:hover { background-color: $main-color-essence; }
+
+  .badge { background-color: $brand-primary; }
+}

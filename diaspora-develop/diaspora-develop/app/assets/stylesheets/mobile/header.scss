@@ -1,0 +1,218 @@
+/* This file contains the CSS code corresponding to the header and the drawer (including the menu) of the mobile version */
+
+$drawer-width: 400px;
+$drawer-width-offset: $drawer-width + 50px;
+$mobile-navbar-height: 46px;
+
+#main-nav.navbar-fixed-top {
+  width: 100%;
+  height: $mobile-navbar-height !important;
+  min-height: $mobile-navbar-height !important;
+  max-height: $mobile-navbar-height !important;
+
+  .login {
+    color: $white;
+    font-weight: bold;
+    padding: 13px;
+  }
+
+  .navbar {
+    margin: 0;
+    padding: 0;
+    border: none;
+    min-height: $mobile-navbar-height;
+  }
+
+  .navbar-right {
+    float: right;
+  }
+
+  .navbar-nav {
+    margin-bottom: 0;
+    margin-top: 0;
+    li { float: left; }
+  }
+
+  .header-title {
+    padding: 7px 15px;
+    margin: 0 0 0 -15px;
+    height: $mobile-navbar-height;
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  #nav-badges {
+    float: right;
+    margin: 0 -15px;
+    display: inline-flex;
+
+    li > a, li > button {
+      background-color: transparent;
+
+      &.badge-link {
+        font-size: 26px;
+        padding: 14px 6px;
+        text-align: center;
+        width: $mobile-navbar-height;
+        height: $mobile-navbar-height;
+
+        [class^="entypo-"], [class^="diaspora-custom-"] {
+          color: $white;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+
+          &.entypo-bell, &.diaspora-custom-compose {
+            text-align: center;
+            font-size: 22px;
+
+            &:before {
+              position: relative;
+              top: -2px;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-toggle {
+      display: block;
+      margin: 6px 15px;
+    }
+
+    .badge {
+      z-index: 3;
+      top: 6px;
+      right: 6px;
+      padding: 2px 6px;
+      position: absolute;
+      background-color: $red;
+    }
+  }
+}
+
+#drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: $drawer-width;
+  @media (max-width: $drawer-width-offset) {
+    width: 80%;
+  }
+  left: 100%;
+  background-color: #444;
+  box-shadow: none;
+
+  header {
+    width: 100%;
+    position: absolute;
+    height: $mobile-navbar-height;
+    background-color: $navbar-inverse-bg;
+    border-bottom: solid $navbar-inverse-border 1px;
+
+    #global-search {
+      form {
+        padding: 0 15px;
+        width: 100%;
+
+        input {
+          margin-top: 7px;
+          background-color: $navbar-inverse-bg;
+          font-size: 13px;
+          color: black;
+
+          &.active {
+            background-color: $white;
+          }
+
+          &:focus {
+            outline: none;
+            background-color: white;
+          }
+
+          &:placeholder { text-shadow: none; }
+        }
+      }
+    }
+  }
+
+  nav {
+    position: absolute;
+    top: $mobile-navbar-height;
+    bottom: 0;
+    overflow: auto;
+    width: 100%;
+
+    li {
+      font-size: 1.8rem;
+      line-height: 2rem;
+      color: $light-grey;
+      border-bottom: solid $navbar-inverse-border 1px;
+    }
+
+    li:hover {
+      background-color: $link-grey;
+    }
+
+    .no-border {
+      padding: 0;
+      border-bottom: 0;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      > ul > li > a {
+        font-size: 14px;
+        padding: 8px 42px;
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .avatar {
+      height: 35px;
+      width: 35px;
+      margin: -7px 5px;
+      float: right;
+    }
+  }
+
+  a {
+    display: block;
+    color: $light-grey;
+    text-decoration: none;
+    padding: 12px 25px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#main-nav, #drawer {
+  transition: all 0.25s ease;
+  z-index: 10;
+}
+
+/* This class is added when the user open the drawer */
+#app.draw {
+  #main-nav, #drawer {
+    transform: translateX(-$drawer-width);
+  }
+  @media (max-width: $drawer-width-offset) {
+    #main-nav {
+      transform: translateX(-80%);
+    }
+    #drawer {
+      transform: translateX(-100%);
+    }
+  }
+}

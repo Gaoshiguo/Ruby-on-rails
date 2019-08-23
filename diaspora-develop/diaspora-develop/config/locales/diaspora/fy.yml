@@ -1,0 +1,90 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+fy:
+  _applications: "Tapassingen"
+  _contacts: "Kontakten"
+  account: "Akkount"
+  are_you_sure: "Bisto wis?"
+  aspects:
+    edit:
+      update: "fernij"
+      updating: "fernije"
+    index:
+      help:
+        find_a_bug: "... in %{link} fine?"
+        have_a_question: "... in %{link} hawwe?"
+        tag_question: "fraach"
+      new_here:
+        learn_more: "Lês mear"
+        title: "Wolkom Nije Brûkers"
+      welcome_to_diaspora: "Wolkom by Diaspora, %{name}!"
+    seed:
+      acquaintances: "Bekenden"
+      family: "Famylje"
+      friends: "Freonen"
+      work: "Wurk"
+  cancel: "Annulearje"
+  comments:
+    new_comment:
+      comment: "Reaksje"
+      commenting: "Reagearje..."
+  contacts:
+    index:
+      all_contacts: "Alle Kontakten"
+      title: "Kontakten"
+  conversations:
+    create:
+      sent: "Berjocht ferstjoerd"
+    index:
+      inbox: "Ynbox"
+      no_messages: "gjin berjochten"
+    new:
+      send: "Ferstjoere"
+      sending: "Ferstjoere..."
+      subject: "ûnderwerp"
+      to: "oan"
+    show:
+      reply: "reagearje"
+      replying: "Reagearje..."
+  date:
+    formats:
+      birthday: "%d %B"
+      birthday_with_year: "%d %B %Y"
+      fullmonth_day: "%d %B"
+  delete: "Fuortsmite"
+  email: "E-mail"
+  find_people: "Minsken of #labels Sykje"
+  invitations:
+    new:
+      invite_someone_to_join: "Immen útnoadigje foar Diaspora!"
+      language: "Taal"
+      send_an_invitation: "In útnoeging ferstjoere"
+  layouts:
+    application:
+      powered_by: "MEA MOOGLIK MAKKE TROCH DIASPORA*"
+    header:
+      code: "koade"
+      logout: "Útlogge"
+      profile: "Profyl"
+      settings: "Ynstellingen"
+  more: "Mear"
+  no_results: "Gjin Risseltaten Fûn"
+  notifier:
+    a_post_you_shared: "in berjocht."
+    click_here: "klik hjirre"
+    hello: "Guoi %{name}"
+    reshared:
+      view_post: "Toan berjocht >"
+    thanks: "Tige Tank,"
+  nsfw: "Net Feilich Foar Wurk"
+  ok: "Okee"
+  privacy: "Privacy"
+  profile: "Profyl"
+  public: "Iepenbier"
+  search: "Sykje"
+  settings: "Ynstellingen"
+  username: "Brûkersnamme"

@@ -1,0 +1,47 @@
+@import 'color-variables';
+@import 'mixins';
+
+html { min-height: 100%; }
+
+.error-404 {
+  background: image-url('peeping-tom.png') no-repeat bottom;
+  background-attachment: fixed;
+}
+
+.error-404,
+.error-422,
+.error-500,
+.error-not-public {
+  background-color: $background-grey;
+  bottom:0px;
+  color: $text-dark-grey;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  width: 100%;
+
+  .big-number {
+    color: $text-grey;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 250px;
+    line-height: 1em;
+    padding-top: 50px;
+    text-shadow: 0 2px 0 #fff, 0 -1px 0 #999;
+  }
+
+  a {
+    text-decoration : none;
+    color : rgb(42,156,235);
+  }
+
+  a:hover {
+    text-decoration : underline;
+  }
+
+  .transparent {
+    filter: alpha(opacity = 60);
+    opacity: .6;
+  }
+}

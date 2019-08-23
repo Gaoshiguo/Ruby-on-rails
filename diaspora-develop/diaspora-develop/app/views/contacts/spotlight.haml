@@ -1,0 +1,25 @@
+- content_for :page_title do
+  = t('contacts.spotlight.community_spotlight')
+
+.container#contacts_container
+  .row
+    .col-md-3
+      .sidebar
+        = render "contacts/sidebar"
+
+    .col-md-9
+      .stream.contacts.framed-content#people-stream
+        .header.clearfix
+          - if AppConfig.settings.community_spotlight.suggest_email.present?
+            .pull-right
+              = link_to t('contacts.spotlight.suggest_member'), "mailto:#{AppConfig.settings.community_spotlight.suggest_email}", :class => "btn btn-default", :id => "suggest_member"
+          %h3
+            = t('contacts.spotlight.community_spotlight')
+
+        #community_spotlight
+          - if @people.blank?
+            .well
+              = t("contacts.spotlight.no_members")
+          - else
+            - @people.each do |person|
+              = render 'people/person', :person => person, :contact => current_user.contact_for(person)

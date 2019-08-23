@@ -1,0 +1,92 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+ar:
+  devise:
+    confirmations:
+      confirmed: "أُكّد حسابك بنجاح. لقد ولجت."
+      new:
+        resend_confirmation: "أعد إرسال إرشادات التّأكيد"
+      send_instructions: "سيصلك بريد إلكترونيّ قريبًا فيه إرشادات تأكيد الحساب."
+    failure:
+      inactive: "لم يُفعّل حسابك بعد."
+      invalid: "اسم المستخدم أو كلمة مروره غير صالحة."
+      invalid_token: "رمز الاستيثاق غير صالح."
+      locked: "حسابك مقفول."
+      not_found_in_database: "البريد الإلكترونيّ أو كلمة المرور غير صالحة."
+      timeout: "انتهت جلستك، فضلًا لِج مجدّدًا للمتابعة."
+      unauthenticated: "عليك الولوج أو التسجيل للمتابعة."
+      unconfirmed: "عليك تأكيد حسابك للمتابعة."
+    invitations:
+      invitation_token_invalid: "نأسف! رمز الدّعوة غير صالح."
+      send_instructions: "أُرسلت الدّعوة."
+      updated: "ضُبطت كلمة المرور بنجاح. لقد ولجت."
+    mailer:
+      confirmation_instructions:
+        confirm: "أكّد حسابي"
+        subject: "إرشادات التّأكيد"
+        you_can_confirm: "يمكنك تأكيد حسابك عبر الوصلة الآتية:"
+      hello: "أهلًا %{email}!"
+      inviter:
+        accept_at: ", %{url}, يمكنك قبولها عبر الرابط التالي"
+        has_invited_you: "%{name} يدعوك للإنضمام إلى دياسبرا"
+        have_invited_you: "دعاك %{names} للانضمام إلى دياسبرا*"
+      reset_password_instructions:
+        change: "غيّر كلمة المرور"
+        ignore: "إن لم تكن أنت فتجاهل هذا البريد رجاءً."
+        someone_requested: "طلب أحدهم وصلة لتغيير كلمة المرور. إن كنت أنت ذاك فيمكنك اتّباع الوصلة أدناه."
+        subject: "إرشادات تصفير كلمة المرور"
+        wont_change: "لن تتغيّر كلمة المرور حتّى تدخل الوصلة أعلاه وتنشئ غيرها."
+      unlock_instructions:
+        account_locked: "لقد قُفل حسابك بسبب عدد محاولات الولوج غير النّاجح."
+        click_to_unlock: "انقر الوصلة أدناه لفكّ الحساب:"
+        subject: "إرشادات فكّ القفل"
+        unlock: "فكّ حسابي"
+      welcome: "مرحبًا %{email}!"
+    passwords:
+      edit:
+        change_password: "غيّر كلمة المرور"
+        confirm_password: "أكّد كلمة المرور"
+        new_password: "كلمة المرور الجديدة"
+      new:
+        email: "البريد الإلكترونيّ"
+        forgot_password: "أنسيت كلمة المرور؟"
+        reset_password: "صفّر كلمة المرور"
+        send_password_instructions: "أرسل لي إرشادات تصفير كلمة المرور"
+      send_instructions: "سيصلك بريد إلكترونيّ قريبًا فيه إرشادات تصفير كلمة المرور."
+      updated: "تغيّرت كلمة المرور بنجاح. لقد ولجت."
+    registrations:
+      destroyed: "الوداع! حُذف حسابك بنجاح. نأمل أن نراك قريبًا."
+      signed_up: "لقد سجّلت بنجاح. إن طلبت تأكيدًا فقد أُرسل إلى بريدك."
+      updated: "لقد حدّثت حسابك بنجاح."
+    sessions:
+      new:
+        login: "لِج"
+        modern_browsers: "تدعم المتصفحات الحديثة فقط."
+        password: "كلمة المرور"
+        remember_me: "تذكّرني"
+        sign_in: "لِج"
+        username: "اسم المستخدم"
+      signed_in: "ولجت بنجاح."
+      signed_out: "خرجت بنجاح."
+    shared:
+      links:
+        forgot_your_password: "أنسيت كلمة المرور؟"
+        receive_confirmation: "ألم تصلك إرشادات التّأكيد؟"
+        receive_unlock: "ألم تصلك إرشادات فكّ القفل؟"
+        sign_in: "لِج"
+        sign_up: "أنشئ حسابًا"
+        sign_up_closed: "تسجيل الحسابات مقفول حاليًّا."
+    unlocks:
+      new:
+        resend_unlock: "أعد إرسال إرشادات فكّ القفل"
+      send_instructions: "سيصلك بريد إلكترونيّ قريبًا فيه إرشادات لفكّ قفل الحساب."
+      unlocked: "فُكّ قفل الحساب بنجاح. لقد ولجت."
+  errors:
+    messages:
+      already_confirmed: "تم التأكيد مسبقا"
+      not_found: "غير موجود"
+      not_locked: "لم يكن مغلقا"

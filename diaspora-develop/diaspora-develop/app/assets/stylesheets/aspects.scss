@@ -1,0 +1,23 @@
+.aspect-dropdown {
+
+  li {
+    @include selectable-list;
+
+    .status_indicator {
+      width: 19px;
+      height: 14px;
+      display: inline-block;
+    }
+
+    a {
+      .text {
+        color: #333333;
+      }
+      &:hover {
+        background: $background-grey;
+      }
+      cursor: pointer;
+      padding-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+lv:
+  _applications: "Lietotnes"
+  _contacts: "Kontakti"
+  _services: "Servisi"
+  account: "Konts"
+  activerecord:
+    errors:
+      models:
+        contact:
+          attributes:
+            person_id:
+              taken: "ir jābūt unikālam starp lietotāja kontaktiem."
+        person:
+          attributes:
+            diaspora_handle:
+              taken: "ir aizņemts."
+        reshare:
+          attributes:
+            root_guid:
+              taken: "Baigi labais, jā? Tu jau esi dalījies ar šo ierakstu!"
+        user:
+          attributes:
+            email:
+              taken: "ir aizņemts."
+            person:
+              invalid: "nav derīgs."
+            username:
+              invalid: "nav derīgs. Ir atļauti tikai burti, cipari un apakšsvītras."
+              taken: "ir aizņemts."
+  all_aspects: "Visas grupas"
+  are_you_sure: "Vai esi pārliecināts?"
+  are_you_sure_delete_account: "Vai tiešām vēlaties slēgt savu kontu? To nevarēs atjaunot!"
+  aspect_memberships:
+    destroy:
+      failure: "Neizdevās noņemt personu no grupas"
+      success: "Persona tika veiksmīgi noņemta no grupas"
+  aspects:
+    add_to_aspect:
+      failure: "Nesanāca pievienot kontaktu grupai."
+      success: "Kontakts veiksmīgi pievienots grupai."
+    aspect_listings:
+      add_an_aspect: "+ Pievienot grupu"
+    destroy:
+      failure: "%{name} nav tukša un to nevar noņemt."
+      success: "%{name} tika veiksmīgi noņemta."
+    edit:
+      aspect_list_is_not_visible: "Kontakti šajā grupā neredz viens otru."
+      aspect_list_is_visible: "Kontakti šajā grupā var redzēt viens otru."
+      confirm_remove_aspect: "Vai jūs tiešām vēlaties dzēst šo grupu?"
+      rename: "pārsaukt"
+      update: "atjaunot"
+      updating: "atjauno"
+    index:
+      donate: "Ziedot"
+      help:
+        do_you: "Ja tev ir:"
+        feature_suggestion: "... %{link}?"
+        find_a_bug: "... zināma %{link}?"
+        have_a_question: "... %{link}?"
+        here_to_help: "Diaspora* kopiena tev palīdzēs!"
+        need_help: "Nepieciešama palīdzība?"
+        tag_bug: "kļūda"
+        tag_feature: "uzlabojums"
+        tag_question: "jautājums"
+      introduce_yourself: "Šī ir tava plūsma. Sāk rakstīt un iepazīstini ar sevi."
+      new_here:
+        follow: "Seko %{link} un sveicini jaunos lietotājus diaspora*!"
+        learn_more: "Lasīt vairāk"
+        title: "Sveicināti, jaunie lietotāji"
+      services:
+        content: "Tu vari pieslēgt šādus servisus savam diaspora* profilam:"
+        heading: "Pieslēgt servisus"
+      welcome_to_diaspora: "Laipni lūgti diaspora*, %{name}!"
+    no_contacts_message:
+      community_spotlight: "Kopienas uzmanībā"
+      or_spotlight: "Vai arī tu vari dalīties ar saiti %{link}"
+      try_adding_some_more_contacts: "Tu vari meklēt vai uzaicināt vairāk cilvēku."
+      you_should_add_some_more_contacts: "Pievieno vairāk cilvēku!"
+    seed:
+      acquaintances: "Paziņas"
+      family: "Ģimene"
+      friends: "Draugi"
+      work: "Darbs"
+    update:
+      failure: "Grupas %{name} nosaukums ir pārāk garš, lai to saglabātu."
+      success: "Grupa %{name} tika veiksmīgi labota."
+  cancel: "Atcelt"
+  comments:
+    new_comment:
+      comment: "Komentēt"
+      commenting: "Komentē..."
+  contacts:
+    index:
+      all_contacts: "Visi kontakti"
+      start_a_conversation: "Sākt sarunu"
+      title: "Kontakti"
+  conversations:
+    create:
+      sent: "Ziņa aizsūtīta"
+    index:
+      inbox: "Ienākošās"
+    new:
+      send: "Sūtīt"
+      sending: "Sūta..."
+      subject: "Virsraksts"
+      to: "Adresāts"
+    show:
+      delete: "Dzēst un bloķēt sarunu"
+      reply: "atbildēt"
+      replying: "Atbild..."
+  delete: "Dzēst"
+  email: "E-pasts"
+  error_messages:
+    helper:
+      correct_the_following_errors_and_try_again: "Izlabojiet sekojošās kļūdas un mēģiniet vēlreiz."
+  fill_me_out: "Aizpildi mani"
+  find_people: "Meklēt cilvēkus vai #birkas"
+  invitations:
+    create:
+      sent: "Ielūgumi ir aizsūtīt: %{emails}"
+    new:
+      language: "Valoda"
+  limited: "Ierobežota piekļuve"
+  more: "Vairāk"
+  no_results: "Nekas netika atrasts."
+  ok: "Labi"
+  privacy: "Privātums"
+  profile: "Profils"
+  public: "Publisks"
+  search: "Meklēt"
+  settings: "Iestatījumi"
+  username: "Lietotājvārds"

@@ -1,0 +1,33 @@
+-# Copyright (c) 2010-2011, Diaspora Inc. This file is
+-# licensed under the Affero General Public License version 3 or later. See
+-# the COPYRIGHT file.
+
+!!!
+%html{lang: I18n.locale.to_s, dir: (rtl? ? "rtl" : "ltr")}
+  %head{prefix: og_prefix}
+    - content_for :javascript do
+      = javascript_include_tag "mobile/mobile"
+      = load_javascript_locales
+
+    = render "layouts/head"
+    = include_color_theme "mobile"
+
+    %meta{name: "viewport", content: "width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no"}/
+    %meta{name: "HandheldFriendly", content: "True"}/
+    %meta{name: "MobileOptimized", content: "320"}/
+    %meta{"http-equiv" => "cleartype", :content => "on"}/
+
+  %body
+    #app
+      = render "layouts/header"
+      - if user_signed_in?
+        = render "layouts/drawer"
+
+      .flash-messages-container
+        .flash-messages#flash-messages
+
+      #main{:role => "main"}
+        - if current_page?(:activity_stream)
+          %h3
+            = t("streams.activity.title")
+        = yield

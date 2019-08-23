@@ -1,0 +1,30 @@
+.flash-body {
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: -100px;
+  z-index: 999;
+  width: 100%;
+  pointer-events: none;
+  &.expose {  @include animation(expose, 10s) }
+
+  .flash-message {
+    border-radius: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.8);
+    display: inline-block;
+    font-weight: bold;
+    max-width: 800px;
+    min-width: 500px;
+    padding: 10px 12px;
+    &.alert-danger { border: 1px solid darken($state-danger-bg, 10%); }
+    &.alert-success { border: 1px solid darken($state-success-bg, 10%); }
+    &.alert-warning { border: 1px solid darken($state-warning-bg, 10%); }
+  }
+
+  @media (max-width: $grid-float-breakpoint-max) {
+    .flash-message {
+      max-width: 80%;
+      min-width: 80%;
+    }
+  }
+}

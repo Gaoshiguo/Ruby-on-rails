@@ -1,0 +1,45 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+#author_info.header-full-width
+  = person_image_tag @person, :thumb_medium
+  .content
+    %h2
+      = @person.name
+    %span.description
+      = @person.diaspora_handle
+    - if user_signed_in? && @person != current_user.person
+      - if @presenter.full_hash[:block]
+        .pull-right
+          = link_to t("users.privacy_settings.stop_ignoring"),
+            block_path(@presenter.full_hash[:block][:id]),
+            class: "btn btn-danger",
+            method: :delete
+      - else
+        = render "aspect_memberships/aspect_membership_dropdown"
+    .clear
+  - if user_signed_in? && @person != current_user.person && !@presenter.full_hash[:block]
+    .mobile-icon-bar
+      = link_to "",
+        blocks_path(block: {person_id: @person.id}),
+        data: {confirm: t("are_you_sure_ignore_user")},
+        method: :post,
+        confirm: true,
+        class: "btn entypo-block shield mobile-icon-bar-button"
+    .clear
+  .bottom-bar
+    - if !@person.tag_string.blank? && user_signed_in?
+      = Diaspora::Taggable.format_tags(@person.tag_string)
+
+- if @post_type == :photos
+  = render "photos/index", photos: @posts
+- else
+  .stream#main-stream
+    - if @stream.stream_posts.length > 0
+      = render "shared/stream", posts: @stream.stream_posts
+      = render "shared/stream_more_button"
+    - else
+      .dull
+      - if user_signed_in? && (current_user.person != @person)
+        = t(".has_not_shared_with_you_yet", name: @person.first_name)

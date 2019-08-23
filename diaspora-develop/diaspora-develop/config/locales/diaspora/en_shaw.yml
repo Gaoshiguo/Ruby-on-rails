@@ -1,0 +1,410 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+en_shaw:
+  _applications: "𐑨𐑐𐑤𐑦𐑒𐑱𐑖𐑩𐑯"
+  _contacts: "𐑒𐑪𐑯𐑑𐑨𐑒𐑑𐑕"
+  account: "𐑩𐑒𐑬𐑯𐑑"
+  activerecord:
+    errors:
+      models:
+        contact:
+          attributes:
+            person_id:
+              taken: "𐑥𐑳𐑕𐑑 𐑚𐑰 𐑿𐑯𐑰𐑒 𐑩𐑥𐑳𐑙 𐑞𐑦𐑕 𐑿𐑟𐑼𐑟 𐑒𐑪𐑯𐑑𐑨𐑒𐑑𐑕"
+        person:
+          attributes:
+            diaspora_handle:
+              taken: "𐑦𐑟 𐑷𐑤𐑮𐑧𐑛𐑦 𐑑𐑱𐑒𐑩𐑯"
+        reshare:
+          attributes:
+            root_guid:
+              taken: "𐑿𐑝 𐑷𐑤𐑮𐑧𐑛𐑦 𐑮𐑦𐑖𐑺𐑛 𐑞𐑨𐑑 𐑐𐑴𐑕𐑑!"
+        user:
+          attributes:
+            email:
+              taken: "𐑦𐑟 𐑷𐑤𐑮𐑧𐑛𐑦 𐑑𐑱𐑒𐑩𐑯."
+            person:
+              invalid: "𐑦𐑟 𐑦𐑯𐑝𐑨𐑤𐑦𐑛."
+            username:
+              invalid: "is invalid. We only allow letters, numbers, and underscores"
+              taken: "𐑦𐑟 𐑷𐑤𐑮𐑧𐑛𐑦 𐑑𐑱𐑒𐑩𐑯."
+  all_aspects: "𐑷𐑤 𐑨𐑕𐑐𐑧𐑒𐑑𐑕"
+  are_you_sure: "𐑸 𐑿 𐑖𐑻?"
+  aspect_memberships:
+    destroy:
+      failure: "𐑓𐑱𐑤𐑛 𐑑 𐑮𐑦𐑥𐑵𐑝 𐑐𐑻𐑕𐑩𐑯 𐑓𐑮𐑪𐑥 𐑨𐑕𐑐𐑧𐑒𐑑"
+      no_membership: "𐑒𐑫𐑛 𐑯𐑪𐑑 𐑓𐑲𐑯𐑛 𐑞 𐑕𐑦𐑤𐑧𐑒𐑑𐑩𐑛 𐑐𐑻𐑕𐑩𐑯 𐑦𐑯 𐑞𐑨𐑑 𐑨𐑕𐑐𐑧𐑒𐑑"
+      success: "𐑕𐑩𐑒𐑕𐑧𐑕𐑓𐑫𐑤𐑦 𐑮𐑦𐑥𐑵𐑝𐑛 𐑐𐑻𐑕𐑩𐑯 𐑓𐑮𐑪𐑥 𐑨𐑕𐑐𐑧𐑒𐑑"
+  aspects:
+    add_to_aspect:
+      failure: "𐑓𐑱𐑤𐑛 𐑑 𐑨𐑛 𐑒𐑪𐑯𐑑𐑨𐑒𐑑 𐑑 𐑨𐑕𐑐𐑧𐑒𐑑."
+      success: "𐑕𐑩𐑒𐑕𐑧𐑕𐑓𐑫𐑤𐑦 𐑨𐑛𐑩𐑛 𐑒𐑪𐑯𐑑𐑨𐑒𐑑 𐑑 𐑨𐑕𐑐𐑧𐑒𐑑."
+    aspect_listings:
+      add_an_aspect: "+ 𐑨𐑛 𐑩𐑯 𐑨𐑕𐑐𐑧𐑒𐑑"
+    destroy:
+      failure: "%{name} ez dago hutsik eta ezin izan da ezabatu."
+      success: "%{name} 𐑢𐑪𐑟 𐑕𐑩𐑒𐑕𐑧𐑕𐑓𐑫𐑤𐑦 𐑮𐑦𐑥𐑵𐑝𐑛."
+    edit:
+      aspect_list_is_not_visible: "𐑨𐑕𐑐𐑧𐑒𐑑 𐑤𐑦𐑕𐑑 𐑦𐑟 𐑣𐑦𐑛𐑩𐑯 𐑑 𐑳𐑞𐑼𐑟 𐑦𐑯 𐑨𐑕𐑐𐑧𐑒𐑑"
+      aspect_list_is_visible: "𐑨𐑕𐑐𐑧𐑒𐑑 𐑤𐑦𐑕𐑑 𐑦𐑟 𐑝𐑦𐑟𐑦𐑚𐑩𐑤 𐑑 𐑳𐑞𐑼𐑟 𐑦𐑯 𐑨𐑕𐑐𐑧𐑒𐑑"
+      confirm_remove_aspect: "𐑸 𐑿 𐑖𐑻 𐑿 𐑢𐑳𐑯𐑑 𐑑 𐑛𐑦𐑤𐑰𐑑 𐑞𐑦𐑕 𐑨𐑕𐑐𐑧𐑒𐑑?"
+      rename: "𐑮𐑦𐑯𐑱𐑥"
+      update: "𐑳𐑐𐑛𐑱𐑑"
+      updating: "𐑳𐑐𐑛𐑱𐑑𐑦𐑙"
+    index:
+      donate: "𐑛𐑴𐑯𐑱𐑑"
+      help:
+        here_to_help: "Diaspora community is here to help!"
+        tag_bug: "#bug"
+        tag_feature: "#feature"
+        tag_question: "#question"
+      services:
+        content: "𐑿 𐑒𐑨𐑯 𐑒𐑩𐑯𐑧𐑒𐑑 𐑞 𐑓𐑪𐑤𐑴𐑦𐑙 𐑕𐑻𐑝𐑦𐑕𐑩𐑟 𐑑 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩:"
+        heading: "𐑒𐑩𐑯𐑧𐑒𐑑 𐑕𐑻𐑝𐑦𐑕𐑩𐑟"
+    no_contacts_message:
+      try_adding_some_more_contacts: "You can search (top) or invite (right) more contacts."
+    seed:
+      acquaintances: "𐑩𐑒𐑢𐑱𐑑𐑩𐑯𐑕𐑩𐑟"
+      family: "𐑓𐑨𐑥𐑦𐑤𐑦"
+      friends: "𐑓𐑮𐑧𐑯𐑛𐑟"
+      work: "𐑢𐑻𐑒"
+    update:
+      failure: "𐑿𐑼 𐑨𐑕𐑐𐑧𐑒𐑑, %{name}, 𐑣𐑨𐑛 𐑑𐑵 𐑤𐑪𐑙 𐑩 𐑯𐑱𐑥 𐑑 𐑚𐑰 𐑕𐑱𐑝𐑛."
+      success: "𐑿𐑼 𐑨𐑕𐑐𐑧𐑒𐑑, %{name}, 𐑣𐑨𐑟 𐑚𐑧𐑯 𐑕𐑩𐑒𐑕𐑧𐑕𐑓𐑫𐑤𐑦 𐑧𐑛𐑦𐑑𐑩𐑛."
+  bookmarklet:
+    explanation: "𐑐𐑴𐑕𐑑 𐑑 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩 𐑓𐑮𐑳𐑥 𐑨𐑯𐑦𐑢𐑺 𐑚𐑲 𐑚𐑫𐑒𐑥𐑸𐑒𐑦𐑙 %{link}."
+    heading: "𐑚𐑫𐑒𐑥𐑸𐑒𐑤𐑧𐑑"
+    post_something: "𐑐𐑴𐑕𐑑 𐑕𐑳𐑥𐑔𐑦𐑙 𐑑 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩"
+  cancel: "𐑒𐑨𐑯𐑕𐑩𐑤"
+  comments:
+    new_comment:
+      comment: "𐑒𐑪𐑥𐑩𐑯𐑑"
+      commenting: "𐑒𐑪𐑥𐑩𐑯𐑑𐑦𐑙..."
+  contacts:
+    index:
+      all_contacts: "𐑷𐑤 𐑒𐑪𐑯𐑑𐑨𐑒𐑑𐑕"
+      my_contacts: "𐑥𐑲 𐑒𐑪𐑯𐑑𐑨𐑒𐑑𐑕"
+      no_contacts: "𐑯𐑴 𐑒𐑪𐑯𐑑𐑨𐑒𐑑𐑕."
+      only_sharing_with_me: "𐑴𐑯𐑤𐑦 𐑖𐑺𐑦𐑙 𐑢𐑦𐑞 𐑥𐑰"
+      start_a_conversation: "𐑕𐑑𐑸𐑑 𐑩 𐑒𐑪𐑯𐑝𐑼𐑕𐑱𐑖𐑩𐑯"
+      title: "𐑒𐑪𐑯𐑑𐑨𐑒𐑑𐑕"
+  conversations:
+    create:
+      sent: "𐑥𐑧𐑕𐑩𐑡 𐑕𐑧𐑯𐑑"
+    index:
+      inbox: "𐑦𐑯𐑚𐑪𐑒𐑕"
+      no_messages: "𐑯𐑴 𐑥𐑧𐑕𐑩𐑡𐑩𐑟"
+    new:
+      send: "𐑕𐑧𐑯𐑛"
+      sending: "𐑕𐑧𐑯𐑛𐑦𐑙..."
+      subject: "𐑕𐑳𐑚𐑡𐑧𐑒𐑑"
+      to: "𐑑"
+    show:
+      delete: "𐑛𐑦𐑤𐑰𐑑 𐑯 𐑚𐑤𐑪𐑒 𐑒𐑪𐑯𐑝𐑼𐑕𐑱𐑖𐑩𐑯"
+      reply: "𐑮𐑦𐑐𐑤𐑲"
+  delete: "𐑛𐑦𐑤𐑰𐑑"
+  email: "𐑦-𐑥𐑱𐑤"
+  error_messages:
+    helper:
+      correct_the_following_errors_and_try_again: "𐑒𐑩𐑮𐑧𐑒𐑑 𐑞 𐑓𐑪𐑤𐑴𐑦𐑙 𐑺𐑼𐑟 𐑯 𐑑𐑮𐑲 𐑩𐑜𐑧𐑯."
+  fill_me_out: "𐑓𐑦𐑤 𐑥𐑰 𐑬𐑑"
+  find_people: "𐑓𐑲𐑯𐑛 𐑐𐑰𐑐𐑩𐑤"
+  invitations:
+    create:
+      no_more: "𐑿 𐑣𐑨𐑝 𐑯𐑴 𐑥𐑹 𐑦𐑯𐑝𐑦𐑑𐑱𐑖𐑩𐑯𐑟."
+      rejected: "𐑞 𐑓𐑪𐑤𐑴𐑦𐑙 𐑦-𐑥𐑱𐑤 𐑩𐑛𐑮𐑧𐑕 𐑣𐑨𐑛 𐑐𐑮𐑪𐑚𐑤𐑩𐑥𐑟: "
+      sent: "𐑦𐑯𐑝𐑦𐑑𐑱𐑖𐑩𐑯𐑟 𐑣𐑨𐑝 𐑚𐑧𐑯 𐑕𐑧𐑯𐑑 𐑑: "
+    new:
+      invite_someone_to_join: "𐑦𐑯𐑝𐑲𐑑 𐑕𐑳𐑥𐑢𐑩𐑯 𐑑 𐑡𐑶𐑯 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩!"
+      send_an_invitation: "𐑕𐑧𐑯𐑛 𐑩𐑯 𐑦𐑯𐑝𐑦𐑑𐑱𐑖𐑩𐑯"
+  layouts:
+    application:
+      powered_by: "𐑐𐑬𐑮𐑛 𐑚𐑲 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩*"
+      public_feed: "𐑐𐑳𐑚𐑤𐑦𐑒 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩 𐑓𐑰𐑛 𐑓𐑹 %{name}"
+      whats_new: "𐑢𐑪𐑑𐑕 𐑯𐑿?"
+    header:
+      code: "𐑒𐑴𐑛"
+      logout: "𐑤𐑪𐑜 𐑬𐑑"
+      profile: "𐑐𐑮𐑴𐑓𐑲𐑤"
+      settings: "𐑕𐑧𐑑𐑦𐑙𐑟"
+  limited: "𐑤𐑦𐑥𐑦𐑑𐑩𐑛"
+  more: "𐑥𐑹"
+  no_results: "𐑯𐑴 𐑮𐑦𐑟𐑫𐑤𐑑𐑕 𐑓𐑬𐑯𐑛"
+  notifications:
+    also_commented:
+      few: "%{actors} 𐑷𐑤𐑕𐑴 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 %{post_author}𐑟 %{post_link}."
+      many: "%{actors} 𐑷𐑤𐑕𐑴 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 %{post_author}𐑟 %{post_link}."
+      one: "%{actors} 𐑷𐑤𐑕𐑴 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 %{post_author}𐑟 %{post_link}."
+      other: "%{actors} 𐑷𐑤𐑕𐑴 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 %{post_author}𐑟 %{post_link}."
+      two: "%{actors} also commented on %{post_author}'s %{post_link}."
+      zero: "%{actors} 𐑷𐑤𐑕𐑴 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 %{post_author}𐑟 %{post_link}."
+    also_commented_deleted:
+      few: "%{actors} 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 𐑩 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      many: "%{actors} 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 𐑩 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      one: "%{actors} 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 𐑩 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      other: "%{actors} 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 𐑩 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      two: "%{actors} commented on a deleted post."
+      zero: "%{actors} 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 𐑩 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+    comment_on_post:
+      few: "%{actors} 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 𐑿𐑼 %{post_link}."
+      many: "%{actors} 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 𐑿𐑼 %{post_link}."
+      one: "%{actors} 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 𐑿𐑼 %{post_link}."
+      other: "%{actors} 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 𐑿𐑼 %{post_link}."
+      two: "%{actors} commented on your %{post_link}."
+      zero: "%{actors} 𐑒𐑪𐑥𐑩𐑯𐑑𐑩𐑛 𐑪𐑯 𐑿𐑼 %{post_link}."
+    index:
+      and: "𐑯"
+      and_others:
+        few: "𐑯 %{count} 𐑳𐑞𐑼𐑟"
+        many: "𐑯 %{count} 𐑳𐑞𐑼𐑟"
+        one: "𐑯 𐑢𐑳𐑯 𐑥𐑹"
+        other: "𐑯 %{count} 𐑳𐑞𐑼𐑟"
+        two: "and %{count} others"
+        zero: "𐑯 𐑯𐑴𐑚𐑩𐑛𐑦 𐑧𐑤𐑕"
+      mark_all_as_read: "𐑥𐑸𐑒 𐑷𐑤 𐑨𐑟 𐑮𐑧𐑛"
+      notifications: "𐑯𐑴𐑑𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯𐑟"
+    liked:
+      few: "%{actors} 𐑣𐑨𐑟 𐑡𐑩𐑕𐑑 𐑤𐑲𐑒𐑑 𐑿𐑼 %{post_link}."
+      many: "%{actors} 𐑣𐑨𐑟 𐑡𐑩𐑕𐑑 𐑤𐑲𐑒𐑑 𐑿𐑼 %{post_link}."
+      one: "%{actors} 𐑣𐑨𐑟 𐑡𐑩𐑕𐑑 𐑤𐑲𐑒𐑑 𐑿𐑼 %{post_link}."
+      other: "%{actors} 𐑣𐑨𐑟 𐑡𐑩𐑕𐑑 𐑤𐑲𐑒𐑑 𐑿𐑼 %{post_link}."
+      two: "%{actors} has just liked your %{post_link}."
+      zero: "%{actors} 𐑣𐑨𐑟 𐑡𐑩𐑕𐑑 𐑤𐑲𐑒𐑑 𐑿𐑼 %{post_link}."
+    liked_post_deleted:
+      few: "%{actors} 𐑤𐑦𐑙𐑒𐑑 𐑑 𐑿𐑼 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      many: "%{actors} 𐑤𐑦𐑙𐑒𐑑 𐑿𐑼 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      one: "%{actors} 𐑤𐑦𐑙𐑒𐑑 𐑿𐑼 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      other: "%{actors} 𐑤𐑦𐑙𐑒𐑑 𐑑 𐑿𐑼 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      two: "%{actors} liked your deleted post."
+      zero: "%{actors} 𐑤𐑦𐑙𐑒𐑑 𐑑 𐑿𐑼 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+    mentioned:
+      few: "%{actors} 𐑣𐑨𐑟 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑦𐑯 𐑩 %{post_link}."
+      many: "%{actors} 𐑣𐑨𐑟 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑦𐑯 𐑩 %{post_link}."
+      one: "%{actors} 𐑣𐑨𐑟 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑦𐑯 𐑩 %{post_link}."
+      other: "%{actors} 𐑣𐑨𐑟 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑦𐑯 𐑩 %{post_link}."
+      two: "%{actors} has mentioned you in a %{post_link}."
+      zero: "%{actors} 𐑣𐑨𐑟 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑦𐑯 𐑩 %{post_link}."
+    mentioned_deleted:
+      few: "%{actors} 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑦𐑯 𐑩 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      many: "%{actors} 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑦𐑯 𐑩 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      one: "%{actors} 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑦𐑯 𐑩 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      other: "%{actors} 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑦𐑯 𐑩 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+      two: "%{actors} mentioned you in a deleted post."
+      zero: "%{actors} 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑦𐑯 𐑩 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑐𐑴𐑕𐑑."
+    private_message:
+      few: "%{actors} 𐑕𐑧𐑯𐑑 𐑿 𐑩 𐑥𐑧𐑕𐑩𐑡."
+      many: "%{actors} 𐑕𐑧𐑯𐑑 𐑿 𐑩 𐑥𐑧𐑕𐑩𐑡."
+      one: "%{actors} 𐑕𐑧𐑯𐑑 𐑿 𐑩 𐑥𐑧𐑕𐑩𐑡."
+      other: "%{actors} 𐑕𐑧𐑯𐑑 𐑿 𐑩 𐑥𐑧𐑕𐑩𐑡."
+      two: "%{actors} sent you a message."
+      zero: "%{actors} 𐑕𐑧𐑯𐑑 𐑿 𐑩 𐑥𐑧𐑕𐑩𐑡."
+    reshared:
+      few: "%{actors} has reshared your %{post_link}."
+      many: "%{actors} has reshared your %{post_link}."
+      one: "%{actors} has reshared your %{post_link}."
+      other: "%{actors} has reshared your %{post_link}."
+      two: "%{actors} has reshared your %{post_link}."
+      zero: "%{actors} has reshared your %{post_link}."
+    reshared_post_deleted:
+      few: "%{actors} reshared your deleted post."
+      many: "%{actors} reshared your deleted post."
+      one: "%{actors} reshared your deleted post."
+      other: "%{actors} reshared your deleted post."
+      two: "%{actors} reshared your deleted post."
+      zero: "%{actors} reshared your deleted post."
+    started_sharing:
+      few: "%{actors} 𐑕𐑑𐑸𐑑𐑩𐑛 𐑖𐑺𐑦𐑙 𐑢𐑦𐑞 𐑿."
+      many: "%{actors} 𐑕𐑑𐑸𐑑𐑩𐑛 𐑖𐑺𐑦𐑙 𐑢𐑦𐑞 𐑿."
+      one: "%{actors} 𐑕𐑑𐑸𐑑𐑩𐑛 𐑖𐑺𐑦𐑙 𐑢𐑦𐑞 𐑿."
+      other: "%{actors} 𐑕𐑑𐑸𐑑𐑩𐑛 𐑖𐑺𐑦𐑙 𐑢𐑦𐑞 𐑿."
+      two: "%{actors} started sharing with you."
+      zero: "%{actors} 𐑕𐑑𐑸𐑑𐑩𐑛 𐑖𐑺𐑦𐑙 𐑢𐑦𐑞 𐑿."
+  notifier:
+    click_here: "𐑒𐑤𐑦𐑒 𐑣𐑽"
+    comment_on_post:
+      reply: "𐑮𐑦𐑐𐑤𐑲 𐑹 𐑝𐑿 %{name}𐑟 𐑐𐑴𐑕𐑑 >"
+    confirm_email:
+      click_link: "𐑑 𐑨𐑒𐑑𐑦𐑝𐑱𐑑 𐑿𐑼 𐑦-𐑥𐑱𐑤 𐑨𐑛𐑮𐑧𐑕 %{unconfirmed_email}, 𐑐𐑤𐑰𐑟 𐑒𐑤𐑦𐑒 𐑞𐑦𐑕 𐑤𐑦𐑙𐑒:"
+      subject: "𐑐𐑤𐑰𐑟 𐑨𐑒𐑑𐑦𐑝𐑱𐑑 𐑿𐑼 𐑯𐑿 𐑦-𐑥𐑱𐑤 𐑨𐑛𐑮𐑧𐑕 %{unconfirmed_email}"
+    email_sent_by_diaspora: "𐑞𐑦𐑕 𐑦-𐑥𐑱𐑤 𐑢𐑳𐑟 𐑕𐑧𐑯𐑑 𐑚𐑲 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩.  𐑦𐑓 𐑿𐑛 𐑤𐑲𐑒 𐑑 𐑕𐑑𐑪𐑐 𐑜𐑧𐑑𐑦𐑙 𐑦-𐑥𐑱𐑤𐑟 𐑤𐑲𐑒 𐑞𐑦𐑕,"
+    hello: "𐑣𐑧𐑤𐑴 %{name}!"
+    liked:
+      liked: "%{name} 𐑡𐑳𐑕𐑑 𐑤𐑲𐑒𐑑 𐑿𐑼 𐑐𐑴𐑕𐑑"
+      view_post: "𐑝𐑿 𐑐𐑴𐑕𐑑 >"
+    mentioned:
+      subject: "%{name} 𐑣𐑨𐑟 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑿 𐑪𐑯 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩*"
+    private_message:
+      reply_to_or_view: "𐑮𐑦𐑐𐑤𐑲 𐑑 𐑹 𐑝𐑿 𐑞𐑦𐑕 𐑒𐑪𐑯𐑝𐑼𐑕𐑱𐑖𐑩𐑯 >"
+    reshared:
+      reshared: "%{name} just reshared your post"
+    single_admin:
+      admin: "𐑿𐑼 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩 𐑨𐑛𐑥𐑦𐑯𐑦𐑕𐑑𐑮𐑱𐑑𐑼"
+      subject: "𐑩 𐑥𐑧𐑕𐑩𐑡 𐑑 𐑿𐑼 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩 𐑩𐑒𐑬𐑯𐑑:"
+    started_sharing:
+      sharing: "𐑣𐑨𐑟 𐑕𐑑𐑸𐑑𐑩𐑛 𐑖𐑺𐑦𐑙 𐑢𐑦𐑞 𐑿!"
+      subject: "%{name} 𐑕𐑑𐑸𐑑𐑩𐑛 𐑖𐑺𐑦𐑙 𐑢𐑦𐑞 𐑿 𐑪𐑯 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩*"
+      view_profile: "𐑝𐑿 %{name}𐑟 𐑐𐑮𐑴𐑓𐑲𐑤"
+    thanks: "𐑔𐑱𐑙𐑒𐑕,"
+    to_change_your_notification_settings: "𐑑 𐑗𐑱𐑯𐑡 𐑿𐑼 𐑯𐑴𐑑𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯 𐑕𐑧𐑑𐑦𐑙𐑟"
+  ok: "𐑴𐑒𐑱"
+  people:
+    index:
+      no_one_found: "...𐑯 𐑯𐑴 𐑢𐑳𐑯 𐑢𐑪𐑟 𐑓𐑬𐑯𐑛."
+      no_results: "𐑣𐑱! 𐑿 𐑯𐑰𐑛 𐑑 𐑕𐑻𐑗 𐑓𐑹 𐑕𐑳𐑥𐑔𐑦𐑙."
+      results_for: "𐑕𐑻𐑗 𐑮𐑦𐑟𐑫𐑤𐑑𐑕 𐑓𐑹"
+    person:
+      thats_you: "𐑞𐑨𐑑𐑕 𐑿!"
+    profile_sidebar:
+      bio: "𐑚𐑲𐑴"
+      born: "𐑚𐑻𐑔𐑛𐑱"
+      gender: "𐑡𐑧𐑯𐑛𐑼"
+      location: "𐑤𐑴𐑒𐑱𐑖𐑩𐑯"
+    show:
+      does_not_exist: "𐑐𐑻𐑕𐑩𐑯 𐑛𐑳𐑟 𐑯𐑪𐑑 𐑧𐑜𐑟𐑦𐑕𐑑!"
+      has_not_shared_with_you_yet: "%{name} 𐑣𐑨𐑟 𐑯𐑪𐑑 𐑖𐑺𐑛 𐑧𐑯𐑦 𐑐𐑴𐑕𐑑𐑕 𐑢𐑦𐑞 𐑿 𐑘𐑧𐑑!"
+  photos:
+    create:
+      integrity_error: "𐑓𐑴𐑑𐑴 𐑳𐑐𐑤𐑴𐑛 𐑓𐑱𐑤𐑛.  𐑸 𐑿 𐑖𐑻 𐑞𐑨𐑑 𐑢𐑪𐑟 𐑩𐑯 𐑦𐑥𐑩𐑡?"
+      runtime_error: "𐑓𐑴𐑑𐑴 𐑳𐑐𐑤𐑴𐑛 𐑓𐑱𐑤𐑛.  𐑸 𐑿 𐑖𐑻 𐑿𐑼 𐑕𐑰𐑑𐑚𐑧𐑤𐑑 𐑦𐑟 𐑓𐑨𐑕𐑩𐑯𐑛?"
+      type_error: "𐑓𐑴𐑑𐑴 𐑩𐑐𐑤𐑴𐑛 𐑓𐑱𐑤𐑛.  𐑸 𐑿 𐑖𐑻 𐑩𐑯 𐑦𐑥𐑩𐑡 𐑢𐑪𐑟 𐑨𐑛𐑩𐑛?"
+    destroy:
+      notice: "𐑓𐑴𐑑𐑴 𐑛𐑦𐑤𐑰𐑑𐑩𐑛."
+    new_profile_photo:
+      upload: "𐑩𐑐𐑤𐑴𐑛 𐑩 𐑯𐑿 𐑐𐑮𐑴𐑓𐑲𐑤 𐑓𐑴𐑑𐑴!"
+  posts:
+    show:
+      photos_by:
+        few: "%{count} photos by %{author}"
+        many: "%{count} photos by %{author}"
+        one: "One photo by %{author}"
+        other: "%{count} photos by %{author}"
+        two: "Two photos by %{author}"
+        zero: "No photos by %{author}"
+  profile: "𐑐𐑮𐑴𐑓𐑲𐑤"
+  profiles:
+    edit:
+      allow_search: "𐑩𐑤𐑬 𐑓𐑹 𐑐𐑰𐑐𐑩𐑤 𐑑 𐑕𐑻𐑗 𐑓𐑹 𐑿 𐑢𐑦𐑞𐑦𐑯 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩"
+      first_name: "𐑓𐑻𐑕𐑑 𐑯𐑱𐑥"
+      last_name: "𐑤𐑨𐑕𐑑 𐑯𐑱𐑥"
+      update_profile: "𐑳𐑐𐑛𐑱𐑑 𐑐𐑮𐑴𐑓𐑲𐑤"
+      your_bio: "𐑿𐑼 𐑚𐑲𐑴"
+      your_birthday: "𐑿𐑼 𐑚𐑻𐑔𐑛𐑱"
+      your_gender: "𐑿𐑼 𐑡𐑧𐑯𐑛𐑼"
+      your_location: "𐑿𐑼 𐑤𐑴𐑒𐑱𐑖𐑩𐑯"
+      your_name: "𐑿𐑼 𐑯𐑱𐑥"
+      your_photo: "𐑿𐑼 𐑓𐑴𐑑𐑴"
+      your_tags: "𐑛𐑦𐑕𐑒𐑮𐑲𐑚 𐑿𐑼𐑕𐑧𐑤𐑓 𐑦𐑯 5 𐑢𐑻𐑛𐑟"
+      your_tags_placeholder: "𐑤𐑲𐑒 #diaspora #ironing #kittens #music #newyork"
+    update:
+      failed: "𐑓𐑱𐑤𐑛 𐑑 𐑳𐑐𐑛𐑱𐑑 𐑐𐑮𐑴𐑓𐑲𐑤"
+      updated: "𐑐𐑮𐑴𐑓𐑲𐑤 𐑳𐑐𐑛𐑱𐑑𐑩𐑛"
+  public: "𐑐𐑳𐑚𐑤𐑦𐑒"
+  registrations:
+    create:
+      success: "𐑿'𐑝 𐑡𐑶𐑯𐑛 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩!"
+    new:
+      enter_email: "𐑧𐑯𐑑𐑼 𐑩𐑯 𐑦-𐑥𐑱𐑤"
+      enter_password: "𐑧𐑯𐑑𐑼 𐑩 𐑐𐑨𐑕𐑢𐑼𐑛"
+      enter_password_again: "𐑧𐑯𐑑𐑼 𐑞 𐑕𐑱𐑥 𐑐𐑨𐑕𐑢𐑼𐑛 𐑨𐑟 𐑚𐑦𐑓𐑹"
+      enter_username: "𐑐𐑦𐑒 𐑩 𐑿𐑟𐑼𐑯𐑱𐑥 (𐑴𐑯𐑤𐑦 𐑤𐑧𐑑𐑼𐑟, 𐑯𐑳𐑥𐑚𐑼𐑟, 𐑯 𐑳𐑯𐑛𐑼𐑕𐑒𐑹𐑟)"
+  reshares:
+    reshare:
+      deleted: "𐑩𐑮𐑦𐑡𐑩𐑯𐑩𐑤 𐑐𐑴𐑕𐑑 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑚𐑲 𐑞 𐑷𐑔𐑼."
+      reshare_confirmation: "𐑮𐑦𐑖𐑺 %{author} - %{text}?"
+  search: "𐑕𐑻𐑗"
+  services:
+    create:
+      success: "𐑷𐑔𐑧𐑯𐑑𐑦𐑒𐑱𐑖𐑩𐑯 𐑕𐑩𐑒𐑕𐑧𐑕𐑓𐑫𐑤."
+    destroy:
+      success: "𐑕𐑩𐑒𐑕𐑧𐑕𐑓𐑫𐑤𐑦 𐑛𐑦𐑤𐑰𐑑𐑩𐑛 𐑷𐑔𐑧𐑯𐑑𐑦𐑒𐑱𐑖𐑩𐑯."
+    failure:
+      error: "𐑞𐑺 𐑢𐑪𐑟 𐑩𐑯 𐑺𐑼 𐑒𐑩𐑯𐑧𐑒𐑑𐑦𐑙 𐑞𐑨𐑑 𐑕𐑻𐑝𐑩𐑕"
+    index:
+      disconnect: "𐑛𐑦𐑕𐑒𐑩𐑯𐑧𐑒𐑑"
+      edit_services: "𐑧𐑛𐑦𐑑 𐑕𐑻𐑝𐑦𐑕𐑩𐑟"
+      logged_in_as: "𐑤𐑪𐑜𐑛 𐑦𐑯 𐑨𐑟"
+      really_disconnect: "𐑛𐑦𐑕𐑒𐑩𐑯𐑧𐑒𐑑 %{service}?"
+  settings: "𐑕𐑧𐑑𐑦𐑙𐑟"
+  shared:
+    aspect_dropdown:
+      toggle:
+        few: "In %{count} aspects"
+        many: "In %{count} aspects"
+        one: "In %{count} aspect"
+        other: "In %{count} aspects"
+        two: "In %{count} aspects"
+        zero: "Add to aspect"
+    invitations:
+      by_email: "𐑚𐑲 𐑦-𐑥𐑱𐑤"
+      invite_your_friends: "𐑦𐑯𐑝𐑲𐑑 𐑿𐑼 𐑓𐑮𐑧𐑯𐑛𐑟"
+      invites: "𐑦𐑯𐑝𐑲𐑑𐑕"
+    public_explain:
+      logged_in: "𐑤𐑪𐑜𐑛 𐑦𐑯 𐑑 %{service}"
+      manage: "𐑥𐑨𐑯𐑩𐑡 𐑒𐑩𐑯𐑧𐑒𐑑𐑩𐑛 𐑕𐑻𐑝𐑦𐑕𐑩𐑟"
+      outside: "𐑐𐑳𐑚𐑤𐑦𐑒 𐑥𐑧𐑕𐑩𐑡𐑩𐑟 𐑢𐑦𐑤 𐑚𐑰 𐑩𐑝𐑱𐑤𐑩𐑚𐑩𐑤 𐑓𐑹 𐑳𐑞𐑼𐑟 𐑬𐑑𐑕𐑲𐑛 𐑝 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩 𐑑 𐑕𐑰."
+      title: "𐑕𐑧𐑑 𐑳𐑐 𐑒𐑩𐑯𐑧𐑒𐑑𐑩𐑛 𐑕𐑻𐑝𐑦𐑕𐑩𐑟"
+    publisher:
+      discard_post: "𐑛𐑦𐑕𐑒𐑸𐑛 𐑐𐑴𐑕𐑑"
+      new_user_prefill:
+        i_like: "I'm interested in %{tags}."
+      posting: "𐑐𐑴𐑕𐑑𐑦𐑙..."
+      share: "𐑖𐑺"
+      whats_on_your_mind: "𐑢𐑳𐑑𐑕 𐑪𐑯 𐑿𐑼 𐑥𐑲𐑯𐑛?"
+    stream_element:
+      via: "𐑝𐑾 %{link}"
+  status_messages:
+    new:
+      mentioning: "𐑥𐑧𐑯𐑖𐑩𐑯𐑦𐑙: %{person}"
+    too_long: "{\"few\"=>\"𐑐𐑤𐑰𐑟 𐑥𐑱𐑒 𐑿𐑼 𐑕𐑑𐑨𐑑𐑩𐑕 𐑥𐑧𐑕𐑩𐑡𐑩𐑟 𐑤𐑧𐑕 𐑞𐑨𐑯 %{count} 𐑒𐑺𐑩𐑒𐑑𐑼𐑟\", \"many\"=>\"𐑐𐑤𐑰𐑟 𐑥𐑱𐑒 𐑿𐑼 𐑕𐑑𐑨𐑑𐑩𐑕 𐑥𐑧𐑕𐑩𐑡𐑩𐑟 𐑤𐑧𐑕 𐑞𐑨𐑯 %{count} 𐑒𐑺𐑩𐑒𐑑𐑼𐑟\", \"one\"=>\"𐑐𐑤𐑰𐑟 𐑥𐑱𐑒 𐑿𐑼 𐑕𐑑𐑨𐑑𐑩𐑕 𐑥𐑧𐑕𐑩𐑡𐑩𐑟 𐑤𐑧𐑕 𐑞𐑨𐑯 %{count} 𐑒𐑺𐑩𐑒𐑑𐑼\", \"other\"=>\"𐑐𐑤𐑰𐑟 𐑥𐑱𐑒 𐑿𐑼 𐑕𐑑𐑨𐑑𐑩𐑕 𐑥𐑧𐑕𐑩𐑡𐑩𐑟 𐑤𐑧𐑕 𐑞𐑨𐑯 %{count} 𐑒𐑺𐑩𐑒𐑑𐑼𐑟\", \"two\"=>\"please make your status messages less than %{count} characters\", \"zero\"=>\"𐑐𐑤𐑰𐑟 𐑥𐑱𐑒 𐑿𐑼 𐑕𐑑𐑨𐑑𐑩𐑕 𐑥𐑧𐑕𐑩𐑡𐑩𐑟 𐑤𐑧𐑕 𐑞𐑨𐑯 %{count} 𐑒𐑺𐑩𐑒𐑑𐑼𐑟\"}"
+  streams:
+    aspects:
+      title: "Your Aspects"
+    mentions:
+      title: "Your Mentions"
+  tags:
+    show:
+      follow: "𐑓𐑪𐑤𐑴 #%{tag}"
+      stop_following: "𐑕𐑑𐑪𐑐 𐑓𐑪𐑤𐑴𐑦𐑙 #%{tag}"
+  username: "𐑿𐑟𐑼𐑯𐑱𐑥"
+  users:
+    confirm_email:
+      email_confirmed: "𐑦-𐑥𐑱𐑤 %{email} 𐑨𐑒𐑑𐑦𐑝𐑱𐑑𐑩𐑛"
+      email_not_confirmed: "𐑦-𐑥𐑱𐑤 𐑒𐑫𐑛 𐑯𐑪𐑑 𐑚𐑰 𐑨𐑒𐑑𐑦𐑝𐑱𐑑𐑩𐑛. 𐑮𐑪𐑙 𐑤𐑦𐑙𐑒?"
+    edit:
+      also_commented: "...𐑕𐑳𐑥𐑢𐑩𐑯 𐑷𐑤𐑕𐑴 𐑒𐑪𐑥𐑩𐑯𐑑𐑕 𐑪𐑯 𐑿𐑼 𐑒𐑪𐑯𐑑𐑨𐑒𐑑𐑕 𐑐𐑴𐑕𐑑?"
+      auto_follow_back: "Automatically follow back if a someone follows you"
+      change: "𐑗𐑱𐑯𐑡"
+      change_email: "𐑗𐑱𐑯𐑡 𐑦-𐑥𐑱𐑤"
+      change_language: "𐑗𐑱𐑯𐑡 𐑤𐑱𐑙𐑜𐑢𐑩𐑡"
+      change_password: "𐑗𐑱𐑯𐑡 𐑐𐑨𐑕𐑢𐑼𐑛"
+      close_account:
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+      comment_on_post: "...𐑕𐑳𐑥𐑢𐑩𐑯 𐑒𐑪𐑥𐑩𐑯𐑑𐑕 𐑪𐑯 𐑿𐑼 𐑐𐑴𐑕𐑑?"
+      current_password: "𐑒𐑻𐑩𐑯𐑑 𐑐𐑨𐑕𐑢𐑼𐑛"
+      edit_account: "𐑧𐑛𐑦𐑑 𐑩𐑒𐑬𐑯𐑑"
+      email_awaiting_confirmation: "𐑢𐑰 𐑣𐑨𐑝 𐑕𐑧𐑯𐑑 𐑿 𐑩𐑯 𐑨𐑒𐑑𐑦𐑝𐑱𐑖𐑩𐑯 𐑤𐑦𐑙𐑒 𐑑 %{unconfirmed_email}. 𐑩𐑯𐑑𐑦𐑤 𐑿 𐑓𐑪𐑤𐑴 𐑞𐑦𐑕 𐑤𐑦𐑙𐑒 𐑯 𐑨𐑒𐑑𐑦𐑝𐑱𐑑 𐑞 𐑯𐑿 𐑨𐑛𐑮𐑧𐑕, 𐑢𐑰 𐑢𐑦𐑤 𐑒𐑩𐑯𐑑𐑦𐑯𐑿 𐑑 𐑿𐑟 𐑿𐑼 𐑩𐑮𐑦𐑡𐑩𐑯𐑩𐑤 𐑨𐑛𐑮𐑧𐑕 %{email}."
+      export_data: "𐑧𐑒𐑕𐑐𐑹𐑑 𐑛𐑱𐑑𐑩"
+      liked: "...𐑕𐑳𐑥𐑢𐑩𐑯 𐑤𐑲𐑒𐑕 𐑿𐑼 𐑐𐑴𐑕𐑑?"
+      mentioned: "...𐑿 𐑸 𐑥𐑧𐑯𐑖𐑩𐑯𐑛 𐑦𐑯 𐑩 𐑐𐑴𐑕𐑑?"
+      new_password: "𐑯𐑿 𐑐𐑨𐑕𐑢𐑼𐑛"
+      private_message: "...𐑿 𐑮𐑦𐑕𐑰𐑝 𐑩 𐑐𐑮𐑲𐑝𐑩𐑑 𐑥𐑧𐑕𐑩𐑡?"
+      receive_email_notifications: "𐑮𐑦𐑕𐑰𐑝 𐑦-𐑥𐑱𐑤 𐑯𐑴𐑑𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯𐑟 𐑢𐑧𐑯..."
+      started_sharing: "...𐑕𐑳𐑥𐑢𐑩𐑯 𐑕𐑑𐑸𐑑𐑕 𐑖𐑺𐑦𐑙 𐑢𐑦𐑞 𐑿?"
+      your_email: "𐑿𐑼 𐑦-𐑥𐑱𐑤"
+      your_handle: "𐑿𐑼 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩 𐑲𐑛𐑧𐑯𐑑𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯"
+    getting_started:
+      hashtag_explanation: "𐑣𐑨𐑖𐑑𐑨𐑜𐑟 𐑩𐑤𐑬 𐑿 𐑑 𐑑𐑷𐑒 𐑩𐑚𐑬𐑑 𐑯 𐑓𐑪𐑤𐑴 𐑿𐑼 𐑦𐑯𐑑𐑮𐑧𐑕𐑑𐑕.  𐑞𐑺 𐑷𐑤𐑕𐑴 𐑩 𐑜𐑮𐑱𐑑 𐑢𐑱 𐑑 𐑓𐑲𐑯𐑛 𐑯𐑿 𐑐𐑰𐑐𐑩𐑤 𐑪𐑯 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩."
+    public:
+      does_not_exist: "𐑿𐑟𐑼 %{username} 𐑛𐑳𐑟 𐑯𐑪𐑑 𐑧𐑜𐑟𐑦𐑕𐑑!"
+    update:
+      email_notifications_changed: "𐑦-𐑥𐑱𐑤 𐑥𐑴𐑑𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯𐑟 𐑗𐑱𐑯𐑡𐑛"
+      language_changed: "𐑤𐑱𐑙𐑜𐑢𐑩𐑡 𐑗𐑱𐑯𐑡𐑛"
+      language_not_changed: "𐑤𐑱𐑙𐑜𐑢𐑩𐑡 𐑗𐑱𐑯𐑡 𐑓𐑱𐑤𐑛"
+      password_changed: "𐑐𐑨𐑕𐑢𐑼𐑛 𐑗𐑱𐑯𐑡. 𐑿 𐑒𐑨𐑯 𐑯𐑬 𐑤𐑪𐑜 𐑦𐑯 𐑢𐑦𐑞 𐑿𐑼 𐑯𐑿 𐑐𐑨𐑕𐑢𐑼𐑛."
+      password_not_changed: "𐑐𐑨𐑕𐑢𐑼𐑛 𐑗𐑱𐑯𐑡 𐑓𐑱𐑤𐑛"
+      unconfirmed_email_changed: "𐑦-𐑥𐑱𐑤 𐑗𐑱𐑯𐑡. 𐑯𐑰𐑛𐑟 𐑨𐑒𐑑𐑦𐑝𐑱𐑖𐑩𐑯."
+      unconfirmed_email_not_changed: "𐑦-𐑥𐑱𐑤 𐑗𐑱𐑯𐑡 𐑓𐑱𐑤𐑛"

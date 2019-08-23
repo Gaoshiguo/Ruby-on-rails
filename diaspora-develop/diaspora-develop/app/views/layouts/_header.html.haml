@@ -1,0 +1,19 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+%header
+  - unless current_user
+    .dark-header
+      %nav.navbar.navbar-inverse.navbar-fixed-top
+        .container-fluid
+          .row
+            .col-md-12
+              .not-connected-menu
+                .navbar-header.navbar-left
+                  .hidden-xs
+                    = link_to AppConfig.settings.pod_name, root_path, class: "navbar-brand"
+                  .visible-xs-block.header-title
+                    = link_to(image_tag("branding/logos/asterisk_white_mobile.png", class: "img-responsive"),
+                        root_path, class: "navbar-brand")
+                = render "layouts/header_not_connected"

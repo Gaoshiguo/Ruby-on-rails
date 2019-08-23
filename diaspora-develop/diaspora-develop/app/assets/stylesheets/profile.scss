@@ -1,0 +1,169 @@
+#profile_container {
+  .profile_header {
+    margin-bottom: 15px;
+    background-color: $framed-background;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    margin-top: -20px;
+    box-shadow: $card-shadow;
+
+    #edit_profile, #unblock_user_button, .aspect-dropdown {
+      margin-top: 15px;
+    }
+
+    #author_info {
+      h2 {
+        line-height: 35px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+      #name {
+        font-weight: 700;
+      }
+      #diaspora_handle {
+        color: $text-color-pale;
+        font-size: 20px;
+      }
+      #sharing_message {
+        cursor: default;
+        font-size: 20px;
+        &.circle {
+          color: $text-grey;
+          &:before { content: '\26aa'; }
+        }
+        &.entypo-check { color: darken($brand-success,20%); }
+      }
+      .description {
+        margin-bottom: 20px;
+        .tag {
+          background-color: transparent;
+          font-size: $font-size-base;
+        }
+        .tag {
+          font-weight: 700;
+        }
+        .entypo-tag {
+          margin: 0 5px;
+          font-weight: normal;
+          &:hover {text-decoration: none;}
+        }
+      }
+    }
+
+    #profile-horizontal-bar {
+      border-top: 1px dashed $border-grey;
+      min-height: 50px;
+      margin-top: 10px;
+      #profile_buttons {
+        padding: 10px 0;
+        > .profile_button {
+          text-decoration: none;
+          cursor: pointer;
+          margin-right: 25px;
+          .profile-header-icon {
+            font-size: 24.5px;
+            line-height: 30px;
+            color: $text-color-pale;
+            &:hover { color: $text-color; }
+          }
+          #mention_button { font-weight: 700; }
+        }
+      }
+
+      ul#profile_nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        > li {
+          display: inline-block;
+          &.active {
+            border-bottom: 3px solid $brand-primary;
+            a {
+              color: $text-color-active;
+
+              [class^="entypo-"],
+              [class*="entypo-"] {
+                color: $text-color-active;
+              }
+            }
+          }
+          a {
+            padding: 10px 15px;
+            font-size: 16px;
+            line-height: 46px;
+            color: lighten($black,50%);
+            [class^="entypo-"], [class*="entypo-"] {
+              color: lighten($black,50%);
+              margin-right: 2px;
+            }
+            &:hover {
+              color: $text-color-active;
+              text-decoration: none;
+
+              [class^="entypo-"],
+              [class*="entypo-"] {
+                color: $text-color-active;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #profile {
+    padding: 20px;
+    margin-bottom: 35px;
+
+    #profile_photo {
+      margin-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    ul#profile_information {
+      border-top: 1px dashed $border-grey;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow-x: hidden;
+      word-wrap: break-word;
+      > li {
+          margin-bottom: 2em;
+        h4 { font-weight: bold; }
+        }
+    }
+
+  }
+
+  .stream-container > .pagination { text-align: center; }
+
+  #people-stream {
+    background-color: $white;
+    box-shadow: $card-shadow;
+  }
+}
+
+#email-form{
+  padding: 0;
+  .form-group{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+#birth-date{
+  text-align: center;
+  select{
+    width: 32%;
+    display: inline;
+    &:first-of-type{ float: left; }
+    &:last-of-type{ float: right; }
+  }
+}
+
+#update_profile_form {
+  .profile-visibility-hint { margin-left: 10px; }
+  .visibility-hint-icon { cursor: default; }
+}

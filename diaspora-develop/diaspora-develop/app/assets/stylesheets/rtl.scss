@@ -1,0 +1,26 @@
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+ul.as-selections li {
+  float: right;
+}
+
+ul.as-selections li.as-selection-item a.as-close {
+  float: left;
+  margin: 0 0 0 3px;
+}
+
+ul.as-selections li.as-selection-item {
+  padding: 3px 6px 3px 0;
+}
+
+ul, ol {
+  margin: 0 0 1.5em 1.5em;
+  padding-right: 3.333em;
+}
+
+div.content span.rtl {
+  display: block;
+}

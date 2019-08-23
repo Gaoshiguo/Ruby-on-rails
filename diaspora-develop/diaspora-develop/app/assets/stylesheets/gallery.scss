@@ -1,0 +1,79 @@
+$thumbnail-size: 50px;
+$margin: 15px;
+
+#blueimp-gallery {
+  .slides {
+    margin: 0;
+
+    .slide {
+      overflow-y: auto;
+    }
+
+    .slide-content {
+      bottom: $margin * 2 + $thumbnail-size;
+      top: $margin;
+    }
+
+    .too-tall {
+      margin-bottom: $margin * 2 + $thumbnail-size;
+      max-height: none;
+      position: static;
+    }
+  }
+
+  [class^="entypo-"], [class*="entypo-"] {
+    color: $text-grey;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .play-pause {
+    z-index: 2;
+    color: $text-grey;
+  }
+
+  .prev, .next {
+    border-color: $text-grey;
+  }
+
+  .prev [class^="entypo-"], .prev [class*="entypo-"] {
+    padding-right: 6px;
+  }
+
+  .next [class^="entypo-"], .next [class*="entypo-"] {
+    padding-left: 6px;
+  }
+
+  .indicator {
+    bottom: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    li {
+      border: 0;
+      border-radius: $thumbnail-size / 2;
+      height: $thumbnail-size;
+      margin: $margin 6px;
+      vertical-align: middle;
+      width: $thumbnail-size;
+      background-size: cover;
+
+      &.active,
+      &:hover {
+        opacity: 1;
+      }
+
+      &:hover::after {
+        opacity: 0; // We don't want another thumbnail
+      }
+
+      &:only-child {
+        display: none;
+      }
+    }
+  }
+}

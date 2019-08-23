@@ -1,0 +1,101 @@
+#notifications_container {
+  .stream {
+    .header {
+      border-bottom: 1px solid $border-grey;
+      margin-bottom: 10px;
+    }
+
+    .btn-toolbar { margin: 11px 0; }
+
+    .framed-content { padding-bottom: 10px; }
+
+    .year {
+      color: $text-grey;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .day_group + .day_group {
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+
+    .day_group {
+      .date {
+        text-align: center;
+        color: $text-grey;
+        .day {
+          font-size: 40px;
+          line-height: 40px;
+        }
+        .month {
+          font-size: 16px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .media, .media-body {
+      overflow: visible;
+    }
+
+    .pagination { text-align: center; }
+
+    .no-notifications {
+      margin: 0 10px;
+      text-align: center;
+    }
+  }
+
+  .list-group .list-group-item {
+    [class^="entypo-"], [class*="entypo-"], .mentionIcon { margin-right: 5px; }
+    .mentionIcon { font-weight: bold; }
+
+    &.active {
+      [class^="entypo-"], [class*="entypo-"], .mentionIcon { color: $component-active-color; }
+    }
+  }
+}
+
+#notifications_container .stream, header .nav-badges .notifications {
+  .stream-element.media {
+    padding: 10px;
+    margin: 0px;
+    line-height: 18px;
+    border-bottom: 1px solid $border-grey;
+    &:last-child { border: none !important; }
+
+    &.unread {
+      background-color: $background-grey;
+      .unread-toggle {
+        opacity: 1 !important;
+        .entypo-eye { color: $text-color-active; }
+      }
+    }
+
+    &:hover {
+      .unread-toggle { opacity: 1 !important; }
+    }
+
+    .avatar {
+      width: 35px;
+      height: 35px;
+    }
+
+    .unread-toggle {
+      padding: 9px 5px;
+      .entypo-eye {
+        cursor: pointer;
+        color: $text-color-pale;
+        font-size: 17px;
+        line-height: 17px;
+      }
+      opacity: 0;
+    }
+
+    .btn-group.aspect-membership-dropdown { margin: 5px 0; }
+  }
+}

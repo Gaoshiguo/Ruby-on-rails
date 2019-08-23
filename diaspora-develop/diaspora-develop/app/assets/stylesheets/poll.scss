@@ -1,0 +1,55 @@
+.poll-form {
+  border-bottom: 1px solid $border-grey;
+  border-top: 1px solid $border-grey;
+  margin: 10px 0;
+  padding: 10px 0 5px;
+
+  .toggle-result-wrapper {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  form {
+    margin-bottom: 0;
+  }
+
+  .progress {
+    height: 10px;
+    margin-bottom: 5px;
+    clear: both;
+
+    .progress-bar { background-color: $border-dark-grey; }
+    .users-vote { background-color: $brand-primary; }
+  }
+
+  .submit[disabled] {
+    color: $text-grey;
+    cursor: default;
+  }
+}
+
+.poll-content {
+  margin-top: 5px;
+
+  .result-head {
+    margin-bottom: 5px;
+  }
+
+  [type=radio],
+  label {
+    font-weight: normal;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    display: inline;
+  }
+
+  [type=radio],
+  form .poll-result,
+  form .progress {
+    display: none; // Hide the result by default when the vote is possible
+  }
+
+  form [type=radio] {
+    display: inline;
+  }
+}

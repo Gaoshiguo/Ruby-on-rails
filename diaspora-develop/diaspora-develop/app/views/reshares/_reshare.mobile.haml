@@ -1,0 +1,24 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+.reshare
+  - if post
+    .nsfw-hidden
+      = render "shared/photo_area", post: post
+
+    .content
+      = render "shared/post_info", post: post
+
+    - unless post.is_a?(Reshare)
+      = render "shared/nsfw_shield", post: post
+
+      .nsfw-hidden
+        = render "status_messages/status_message", post: post, photos: post.photos
+  - else
+    .content
+      = t(".deleted")
+
+  .reshare_via
+    %span
+      = t(".reshared_via")

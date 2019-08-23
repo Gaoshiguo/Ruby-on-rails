@@ -1,0 +1,83 @@
+# XMPP certificates, keys and user data
+config/certs/*.crt
+config/certs/*.key
+config/prosody.cfg.lua
+
+# Trademark sillyness
+app/views/home/_show.*
+app/views/terms/terms.*
+app/assets/images/custom/
+
+# Configuration files
+config/diaspora.yml
+config/initializers/secret_token.rb
+.bundle
+vendor/bundle/
+vendor/cache/
+config/database.yml
+config/oidc_key.pem
+config/schedule.yml
+
+# Generated files
+log/
+spec/fixtures/*.y*ml
+spec/fixtures/*.fixture.*
+coverage/
+xml_locales/
+public/404.html
+public/422.html
+public/500.html
+
+# the db/schema.rb. Although this is contrary to rails best-practises, we
+# cannot provide a schema.rb that works for both MySQL and PostgreSQL, so we
+# have no choice. Our migrations are maintained, so it should always be
+# possible to get back to a "clean" database schema anyway.
+db/schema.rb
+
+# Sprites
+app/assets/images/branding-*.png
+app/assets/images/branding/logos-*.png
+app/assets/images/icons-*.png
+app/assets/images/social-media-logos-*.png
+
+# Documentation
+.yardoc/
+doc/
+
+# Uploaded files and local files
+public/uploads/
+public/assets/
+public/source.tar*
+tmp/
+
+# Temporary files of every sort
+.byebug_history
+.sass-cache/
+.DS_Store
+.redcar
+.stgit*
+*.swap
+*.swo
+*.swp
+*~
+*#
+*.bak
+*.save
+*.autosave
+nbproject
+patches-*
+capybara-*.html
+
+# Rubinius's JIT
+*.rbc
+
+# IDE
+.idea
+.vscode
+diaspora.iml
+
+# Dolphin's directory's preferences files
+*.directory
+
+# WebTranslateIt
+.wti

@@ -1,0 +1,70 @@
+#hello-there {
+  .well .avatar {
+    min-width: 50px;
+  }
+
+  .well .media{
+    overflow: visible;
+  }
+
+  .awesome {
+    margin-top: 15px;
+  }
+
+  .hero-unit {
+    margin: 20px 42px;
+    padding: 40px 80px;
+  }
+
+  h2 {
+    margin-top: 80px;
+  }
+
+  ul.as-selections {
+    width: 100%;
+    li.as-original {
+      width: 100%;
+      input {
+        height: 32px;
+      }
+    }
+  }
+
+  .as-results .as-list {
+    box-shadow: 0px 1px 1px #666;
+  }
+}
+
+.popover h3 {
+  font-weight: bold;
+  .close { line-height: 18px; }
+}
+
+#welcome-to-diaspora {
+  background: orange;
+  box-shadow: inset 0 -2px 10px rgba(0,0,0,0.35);
+  padding-bottom: 30px;
+  padding-top: 20px;
+
+  h1,h3 {
+    color: $white;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  #gs-skip-x {
+    font-size: 40px;
+  }
+
+  &:hover {
+    #gs-skip-x {
+      opacity: .4;
+      @include transition(opacity, 0.25s);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+- content_for :page_title do
+  = AppConfig.settings.pod_name + " - " + t('devise.sessions.new.sign_in')
+
+.container#login
+  .text-center
+    .logos-asterisk
+    %h1
+      = AppConfig.settings.pod_name
+
+  = render partial: "form", locals: {mobile: false}
+
+  .text-center
+    - if display_password_reset_link?
+      = link_to t('devise.shared.links.forgot_your_password'), new_password_path(resource_name), id: "forgot_password_link"
+      %br
+    - if display_registration_link?
+      = link_to t('devise.shared.links.sign_up'), new_registration_path(resource_name)

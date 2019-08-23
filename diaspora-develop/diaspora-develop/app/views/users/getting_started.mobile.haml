@@ -1,0 +1,47 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+:css
+  .media, .bd{ overflow: visible;}
+
+%br
+
+%section#hello-there
+  .hero-unit-mobile
+    %h1.center
+      = t('.well_hello_there')
+    %h3.center
+      = t(".community_welcome")
+
+    = invited_by_message
+
+    %h2
+      = t(".who_are_you")
+
+    = form_tag profile_path, method: :put, remote: true, id: "edit_profile" do
+      %fieldset
+        .form-group
+          = label_tag "profile[first_name]", t("profiles.edit.your_name")
+          = text_field_tag "profile[first_name]", current_user.first_name, class: "form-control"
+        .form-group
+          = label_tag :your_photo, t("profiles.edit.your_photo")
+          = render "photos/new_profile_photo", aspect: :getting_started, person: current_user.person
+
+    %h2
+      = t('.what_are_you_in_to')
+
+    %p
+      = t('.hashtag_explanation')
+
+    = form_tag(tag_followings_path, method: "get", class: "tag_input search_form") do
+      %fieldset
+        = label_tag "follow_tags", t(".hashtag_suggestions")
+        = text_field_tag "follow_tags", nil, class: "nostrap form-control"
+
+    .center
+      = link_to "#{t('.awesome_take_me_to_diaspora')} »",
+        getting_started_completed_path,
+        id: "awesome_button",
+        class: "btn btn-primary"
+

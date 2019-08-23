@@ -1,0 +1,28 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+.conversation-participants.framed-content.clearfix
+  .control-icons.pull-right
+    - if conversation.participants.count > 1
+      = link_to content_tag(:i, nil, class: "entypo-cross"),
+                conversation_visibility_path(conversation),
+                method: "delete",
+                data:   {confirm: "#{t('.hide')}?"},
+                title:  t(".hide"),
+                class:  "hide_conversation"
+    - else
+      = link_to content_tag(:i, nil, class: "entypo-trash"),
+                conversation_visibility_path(conversation),
+                method: "delete",
+                data:   {confirm: "#{t('.delete')}?"},
+                title:  t(".delete"),
+                class:  "delete_conversation"
+
+  %h3{ :class => direction_for(conversation.subject) }
+    = conversation.subject
+
+  - for participant in conversation.participants
+    = person_image_link(participant, :size => :thumb_small)
+
+= render partial: "messages", locals: {conversation: conversation}

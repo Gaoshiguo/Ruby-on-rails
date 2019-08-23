@@ -1,0 +1,35 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+- content_for :page_title do
+  = @stream.display_tag_name
+
+- content_for :meta_data do
+  = metas_tags @stream.metas_attributes
+
+.container-fluid#tags_show
+  .row
+    .col-md-3.hidden-xs
+      .sidebar
+        .sidebar-header.clearfix
+          %h3
+            = t(".tagged_people", count: @stream.tagged_people_count, tag: @stream.display_tag_name)
+
+        .side_stream.stream
+          = render partial: "people/index", locals: {people: @stream.tagged_people}
+
+    .col-md-9
+      .stream-container
+        #author_info
+          %h2
+            = @stream.display_tag_name
+
+        - if current_user
+          = render "publisher/publisher", publisher_aspects_for(@stream)
+
+        #main-stream.stream
+
+        #paginate
+          .loader.hidden
+            .spinner

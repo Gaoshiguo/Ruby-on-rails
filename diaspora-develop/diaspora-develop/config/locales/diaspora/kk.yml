@@ -1,0 +1,60 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+kk:
+  _contacts: "Байланыстар"
+  _services: "Қызмет атқарулар"
+  _statistics: "Статистикасы"
+  account: "Есепшот"
+  are_you_sure: "Сенімдісіз бе?"
+  aspects:
+    edit:
+      rename: "Атын өзгерту"
+      update: "жаңала"
+      updating: "жаңала"
+    index:
+      help:
+        tag_bug: "қате"
+        tag_question: "сұрақ"
+    seed:
+      family: "Жанұя"
+      friends: "достар"
+      work: "жұмыс"
+  comments:
+    new_comment:
+      comment: "түсініктеме"
+  conversations:
+    new:
+      subject: "тақырып"
+      to: "үшін"
+  delete: "Өшіру"
+  invitations:
+    new:
+      language: "тіл"
+  limited: "Шектеулі"
+  more: "Көбірек"
+  no_results: "Нәтижелер табылмады"
+  notifications:
+    index:
+      no_notifications: "Сізде әлі ешқандай хабарландыруларды жоқ."
+  ok: "ЖАҚСЫ"
+  public: "Қоғамдық"
+  search: "Іздеу"
+  settings: "Құрал саймандар"
+  shared:
+    aspect_dropdown:
+      mobile_row_checked: "%{name}(жою)"
+      mobile_row_unchecked: "%{name} (үстеу)"
+  statistics:
+    closed: "Жабық"
+    enabled: "Жетімді"
+    name: "Аты"
+    network: "Желі"
+    open: "Ашық"
+    services: "Қызмет атқарулар"
+    total_users: "Жалпы пайдаланушылар"
+    version: "Нұсқа"
+  username: "Қолданушының аты"

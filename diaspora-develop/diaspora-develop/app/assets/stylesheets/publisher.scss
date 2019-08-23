@@ -1,0 +1,281 @@
+.publisher {
+  z-index: 1;
+  color: $text-grey;
+  margin: 0;
+  margin-bottom: 20px;
+
+  &.closed {
+    #button_container,
+    .location-container,
+    #hide_publisher,
+    #photodropzone_container,
+    .counter,
+    .options_and_submit {
+      display: none !important;
+    }
+
+    #publisher-textarea-wrapper { border: 1px solid $border-grey !important; }
+  }
+
+  .container-fluid{ padding: 0; }
+
+  form {
+    margin: 0;
+    #fileInfo { display: none !important; }
+
+    #publisher_spinner {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .options_and_submit {
+      padding: 10px 0;
+
+      #publisher-service-icons {
+        text-decoration: none;
+
+        .entypo-cog, .service_icon {
+          color: $text-grey;
+          font-size: 16px;
+          line-height: 16px;
+        }
+        .service_icon { padding: 6px 5px; }
+        .btn.btn-link.question_mark:hover .entypo-cog { color: $black; }
+        .dim { opacity: 0.3; }
+        .social-media-logos-wordpress-16x16 {
+          display: inline-block;
+          height: 16px;
+          width: 16px;
+        }
+      }
+
+      @media(max-width: $screen-xs) {
+        .btn-toolbar {
+          width: 100%;
+          display: flex;
+          .btn, .aspect-dropdown{ flex-grow: 1; }
+          .aspect-dropdown .btn { width: 100%; }
+        }
+        .btn-group:first-child { margin: 0; }
+        .dropdown-menu.pull-right {
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+
+    #publisher-textarea-wrapper {
+      background-color: white;
+      border-radius: 3px;
+      border: 1px solid $border-dark-grey;
+
+      input[type='text']#status_message_text {
+        border: none;
+        box-shadow: none;
+        margin: 0;
+      }
+
+      textarea {
+        background: transparent;
+        border: 0 solid $light-grey;
+        height: 50px;
+        resize: none;
+      }
+
+      &.active textarea {
+        min-height: 90px;
+      }
+
+      .markdownIndications {
+        line-height: 30px;
+        padding-left: 10px;
+        margin-bottom: 0;
+        color: lighten($text-grey,20%);
+        a { color: lighten($link-color, 20%); }
+      }
+
+      &.with_attachments #photodropzone_container {
+        border-top: 1px dashed $border-grey;
+      }
+
+      #poll_creator_container {
+        border-top: 1px dashed $border-grey;
+        padding:4px 6px 4px 6px;
+        box-sizing: border-box;
+        .remove-answer.entypo-cross {
+          display: none;
+          color: lighten($black,75%);
+          &.active { display: block; }
+          &:hover { color: $black; }
+          line-height: 30px;
+          font-size: 18px;
+          cursor: pointer;
+        }
+      }
+
+      &.active #button_container {
+        border-top: 1px solid $border-grey;
+      }
+
+      #photodropzone {
+        margin: 0;
+        > li.publisher_photo {
+          list-style: none;
+          float: left;
+          margin: 8px;
+          height: 80px;
+          width: 80px;
+          overflow: hidden;
+          line-height: 80px;
+          vertical-align: middle;
+
+          img {
+            vertical-align: middle;
+            width: 80px;
+          }
+
+          .x {
+            display: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            text-align: center;
+            background-color: white;
+            color: black;
+            font-size: 50px;
+            line-height: 50px;
+            font-weight: bold;
+            position: absolute;
+            z-index: 2;
+            opacity: 0.85;
+            cursor: pointer;
+            top: 15px;
+            left: 15px;
+
+            &:before {
+              content: '\2716';
+              font-family: 'entypo';
+            }
+          }
+
+          &:hover .x {
+            display: inline-block;
+          }
+
+          .progress {
+            width: 100%;
+            height: 20px;
+            margin: 30px 0;
+          }
+
+          .ajax-loader { display: none; }
+        }
+      }
+
+      #upload_error {
+        color: white;
+        font-weight: bold;
+        border-top: 1px solid white;
+        background-color: $red;
+        text-align: center;
+      }
+
+    }
+  }
+
+  .aspect-dropdown {
+    .radio {
+      min-height: 0;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .md-editor,
+  .md-editor.active {
+    border: 0;
+  }
+
+  .md-preview {
+    // This rule is required until we switch to the newer release of bootstrap-markdown with
+    // the following commit in:
+    // https://github.com/toopay/bootstrap-markdown/commit/14a21c3837140144b27efc19c795d1a37fad70fb
+    min-height: 90px;
+
+    .stream-element .post-content .markdown-content {
+      padding-top: 0;
+    }
+  }
+}
+
+.publisher-textarea-wrapper {
+  position: relative;
+
+  &:not(.with-location) .location-container,
+  &.markdown-preview .location-container,
+  &:not(.with-poll) .poll-creator-container,
+  &.markdown-preview .poll-creator-container,
+  &.markdown-preview .photodropzone-container,
+  &.markdown-preview .publisher-buttonbar {
+    display: none;
+  }
+
+  &.with-location .loader {
+    height: 20px;
+    width: 20px;
+  }
+
+  &.with-location .location-container {
+    border-top: 1px dashed $border-grey;
+    height: 30px;
+    margin-bottom: 0;
+
+    [type='text'] {
+      border: 0;
+      color: $text-grey;
+      height: 20px;
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+
+  .counter {
+    line-height: 30px;
+    margin-right: 10px;
+  }
+
+  &:not(.with-location) .publisher-buttonbar {
+    .hide-location { display: none; }
+    .locator { display: inline-block; }
+  }
+
+  &.with-location .publisher-buttonbar {
+    .hide-location { display: inline-block; }
+    .locator { display: none; }
+  }
+
+  .twitter-typeahead {
+    // Override inline rule of Typeahead
+    // scss-lint:disable ImportantRule
+    position: absolute !important;
+    // scss-lint:enable ImportantRule
+  }
+}
+
+.publisher-buttonbar {
+  float: right;
+  margin-right: 5px;
+
+  .btn.btn-link {
+    font-size: 16px;
+    line-height: $line-height-computed;
+    padding: 4px 2px;
+    text-decoration: none;
+    i { color: $text-grey; }
+  }
+
+  .btn.btn-link:hover {
+    i { color: $black; }
+  }
+}

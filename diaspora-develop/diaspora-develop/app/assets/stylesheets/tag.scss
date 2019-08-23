@@ -1,0 +1,51 @@
+.tag {
+  display: inline-block;
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+    background-color: lighten($link-color, 47%);
+  }
+}
+
+a.tag { color: $link-color; }
+
+h1.tag {
+  border-bottom: 2px dotted $link-color;
+  &:hover { border-bottom: 2px dotted $link-color; }
+}
+
+.info {
+  .tag {
+    background-color: #efefef;
+    color: $text-grey;
+    border-bottom: 1px dotted $border-dark-grey;
+    &:hover { border-bottom: 1px solid $border-dark-grey; }
+  }
+}
+.page-tags {
+  #tags_show {
+    .sidebar {
+      h3 {
+        font-size: 13px;
+        line-height: 1.1;
+      }
+
+      .side_stream #people-stream {
+        .name { display: block; }
+        .name, .diaspora_handle {
+          word-break: break-all;
+        }
+      }
+    }
+    .col-md-9 {
+      .tag-following-action {
+        max-width: 100%;
+        input[type="submit"] {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

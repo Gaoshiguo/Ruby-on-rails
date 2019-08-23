@@ -1,0 +1,47 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body { margin-bottom: 150px; }
+
+.powered-by-diaspora a {
+  color: $link-grey;
+  font-weight: bold;
+}
+
+footer.footer {
+  background-color: $background-grey;
+  border-top: 1px solid $border-grey;
+  bottom: 0;
+  max-height: 130px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  width: 100%;
+
+  ul#footer_nav {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+    > li {
+      display: inline;
+      margin-right: 1em;
+
+      &.separator {
+        margin-left: -.35em;
+        margin-right: .65em;
+        opacity: 0.6;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    a {
+      color: $link-grey;
+    }
+  }
+}

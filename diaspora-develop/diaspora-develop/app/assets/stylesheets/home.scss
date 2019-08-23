@@ -1,0 +1,64 @@
+.page-home {
+  background-color: $main-background;
+
+  h3 {
+    border-bottom: 1px dashed $border-grey;
+    font-weight: bold;
+    margin: 0 0 15px;
+    padding-bottom: 15px;
+  }
+
+  .container-fluid.home-user {
+    padding-bottom: 75px;
+    padding-top: 75px;
+  }
+
+  .dandelion-background {
+    background: image-url('dandelion.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .jumbotron {
+    background-color: rgba($black, .4);
+    margin-bottom: 0;
+
+    h1,
+    h2 {
+      color: $white;
+      font-weight: bold;
+      text-shadow: 0 2px 2px $black;
+    }
+  }
+
+  .landing-info-card {
+    background-color: $framed-background;
+    border: 1px solid $border-grey;
+    box-shadow: $card-shadow;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    min-height: 150px;
+    padding: 15px;
+  }
+
+  .part-of-diaspora {
+    font-style: italic;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .login-form {
+    fieldset { background: none; }
+
+    .block-form {
+      background-color: rgba($white, .25);
+      border-radius: 5px;
+      margin: 0;
+      max-width: 400px;
+      padding: 1em;
+    }
+  }
+}

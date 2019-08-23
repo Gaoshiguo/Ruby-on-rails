@@ -1,0 +1,35 @@
+- content_for :page_title do
+  = t(".conversations_inbox")
+
+.container-fluid#conversations-container
+  .row
+    .col-md-4
+      .sidebar#left_pane
+        .sidebar-header.clearfix#left_pane_header
+          .pull-right
+            = link_to t(".new_conversation"), conversations_path, class: "new-conversation-btn btn btn-default"
+          %h3
+            = t(".inbox")
+
+        .conversation-inbox#conversation-inbox
+          .conversations-form-container.stream.conversations
+            - if @visibilities.count > 0
+              = render partial: "conversations/conversation", collection: @visibilities, as: :visibility
+            - else
+              .no-conversations
+                = t(".no_messages")
+            .pagination-container
+              = will_paginate @visibilities, previous_label: "&laquo;", next_label: "&raquo;", inner_window: 1,
+                  renderer: WillPaginate::ActionView::BootstrapLinkRenderer
+    .col-md-8
+      .conversations-form-container.stream-container
+        #conversation-show{class: @conversation ? "" : "hidden"}
+          - if @conversation
+            = render 'conversations/show', conversation: @conversation
+        #conversation-new{class: @conversation ? "framed-content clearfix hidden" : "framed-content clearfix"}
+          .new-conversation
+            %h3.text-center= t("conversations.index.new_conversation")
+            - if no_contacts
+              .well.text-center= t("javascripts.conversation.new.no_contacts")
+            - else
+              = render "conversations/new"

@@ -1,0 +1,137 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+ga:
+  _applications: "Feidhmchláir"
+  _contacts: "Teagmhálacha"
+  _services: "Seirbhísí"
+  account: "Cuntas"
+  activerecord:
+    errors:
+      models:
+        person:
+          attributes:
+            diaspora_handle:
+              taken: "glacadh cheana."
+        user:
+          attributes:
+            email:
+              taken: "glacadh cheana."
+            person:
+              invalid: "neamhbhailí."
+            username:
+              invalid: "neamhbhailí. Tá ach litreacha, uimhreacha agus béim ceadaithe."
+              taken: "glacadh cheana."
+  all_aspects: "Gach gnéithe"
+  are_you_sure: "An bhfuil tú cinnte?"
+  are_you_sure_delete_account: "An bhfuil tú cinnte go dteastaíonn uait do chuntas a dhúnadh? Ní féidir é seo a chealaigh!"
+  aspects:
+    edit:
+      rename: "athainmnigh"
+      update: "uasdátaigh"
+      updating: "nuashonrú"
+    index:
+      help:
+        need_help: "Cabhair?"
+        tag_bug: "fabht"
+        tag_feature: "gné"
+      new_here:
+        learn_more: "Breis eolais"
+    seed:
+      family: "Gaolmhara"
+      friends: "Cháirde"
+      work: "Obair"
+  cancel: "Cealaigh"
+  contacts:
+    index:
+      all_contacts: "Gach Teagmhálacha"
+      community_spotlight: "Spotsolas Pobail"
+      my_contacts: "Mo Theagmhálacha"
+      title: "Teagmhálacha"
+    spotlight:
+      community_spotlight: "Spotsolas Pobail"
+  conversations:
+    index:
+      inbox: "post isteach"
+    new:
+      send: "Seol"
+      subject: "ábhar"
+      to: "le"
+    show:
+      reply: "freagair"
+  delete: "Scrios"
+  email: "Ríomhphoist"
+  fill_me_out: "Líon amach"
+  invitations:
+    new:
+      language: "Teanga"
+  layouts:
+    application:
+      back_to_top: "Barr"
+    header:
+      code: "cód"
+      logout: "Logáil amach"
+      settings: "Sainroghanna"
+  limited: "Teoranta"
+  more: "Níos mó"
+  no_results: "Níl Torthaí Aimsithe"
+  notifications:
+    index:
+      and: "agus"
+      and_others:
+        one: "agus ceann eile"
+        other: "%{count} gcinn"
+        two: "%{count} chinn"
+        zero: "agus gan ceann eile"
+      notifications: "Fógraí"
+  notifier:
+    hello: "Haileo %{name}!"
+    liked:
+      view_post: "Féach ar post >"
+    reshared:
+      view_post: "Féach ar post >"
+    single_admin:
+      admin: "Do riarthóir Diaspóra"
+    started_sharing:
+      view_profile: "Féach ar próifíl %{name}"
+    thanks: "Maith agat,"
+  nsfw: "NSFW"
+  ok: "OK"
+  people:
+    person:
+      thats_you: "Is leatsa!"
+    profile_sidebar:
+      born: "Breithlá"
+      gender: "Inscne"
+      location: "Suíomh"
+  photos:
+    destroy:
+      notice: "Griangraf scriosta."
+  privacy: "Príobháideachas"
+  profile: "Próifíl"
+  profiles:
+    edit:
+      first_name: "Ainm baiste"
+      last_name: "Sloinne"
+      your_birthday: "Do bhreithlá"
+      your_gender: "D'inscne"
+      your_name: "D'ainm"
+      your_photo: "Do ghriangraf"
+  public: "Poiblí"
+  registrations:
+    new:
+      email: "RÍOMHPHOIST"
+      enter_email: "Seoladh ríomhphoist"
+      password: "PASFHOCAL"
+      password_confirmation: "PASFHOCAL DAINGNITHE"
+      sign_up: "CLÁRÚCHÁN"
+      username: "AINM ÚSAIDEOIR"
+  search: "Cuardaigh"
+  settings: "Sainroghanna"
+  username: "Ainm úsáideora"
+  users:
+    edit:
+      your_email: "Do ríomhphoist"

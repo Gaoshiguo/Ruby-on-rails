@@ -1,0 +1,7 @@
+.container
+  .row
+    .col-md-3
+      - if current_user.admin?
+        = render partial: "admins/admin_bar"
+    .col-md-9
+      = render partial: "report/reports"

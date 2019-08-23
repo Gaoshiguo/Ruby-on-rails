@@ -1,0 +1,109 @@
+@import 'color-variables';
+@import 'bootstrap-variables';
+@import 'animations';
+
+// ADMIN STYlES
+
+// user search
+.users {
+  li.user {
+    border-bottom: 1px solid $light-grey;
+    margin-bottom: .4em;
+    padding-bottom: .4em;
+
+    &:last-child { border: none; }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      max-width: none;
+    }
+
+    .pull-right .label{ display: inline-block; }
+  }
+}
+
+// Invites panel
+.more_invites{
+  #add-invites-section{
+    line-height: 34px;
+    margin-bottom: 15px;
+  }
+}
+
+.invite-emails {
+  margin-bottom: 10px;
+}
+
+// Weekly stats
+.week-selector {
+  margin-top: 10px;
+}
+
+// Pod stats
+.segment-selection {
+  select,
+  [type=submit] {
+    margin-top: 10px;
+  }
+}
+
+.percent-change {
+  &.increase {
+    color: $increase;
+  }
+
+  &.decrease {
+    color: $decrease;
+  }
+}
+
+// reported posts
+.reports {
+  .reason-label {
+    font-weight: bold;
+  }
+
+  .content {
+    padding-bottom: 20px;
+  }
+
+  .panel-body .btn-info {
+    margin-right: 5px;
+  }
+}
+
+// pod list
+#pod-list {
+  .pod-title {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  th.added,
+  td.added,
+  td.actions { white-space: nowrap; }
+
+  tr.deleting {
+    opacity: .5;
+  }
+
+  tr.checking .recheck i {
+    animation-duration: .4s;
+    animation-name: pulsate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  td.actions {
+    text-align: right;
+
+    a { color: inherit; }
+  }
+
+  pre.details {
+    margin-top: 1em;
+    white-space: normal;
+  }
+}

@@ -1,0 +1,42 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+!!!
+%html{lang: I18n.locale.to_s, dir: (rtl? ? "rtl" : "ltr")}
+  %head{prefix: og_prefix}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}/
+
+    - content_for :javascript do
+      = javascript_include_tag :main
+      = load_javascript_locales
+
+    = include_color_theme
+    = render "layouts/head"
+    = translation_missing_warnings
+
+  %body{class: "page-#{controller_name} action-#{action_name}"}
+    = yield :before_content
+
+    %noscript
+      .noscript
+        %h3= t("error_messages.need_javascript")
+
+    = content_for?(:content) ? yield(:content) : yield
+
+    = yield :after_content
+
+    .blueimp-gallery.blueimp-gallery-controls#blueimp-gallery
+      .slides
+      %a.prev
+        .entypo-chevron-small-left
+      %a.next
+        .entypo-chevron-small-right
+      %a.close
+        .entypo-cross
+      %a.play-pause
+      %ol.indicator
+
+    #flash-container= flash_messages
+
+    %a.entypo-chevron-up.back-to-top#back-to-top{title: t("layouts.application.back_to_top"), href: "#"}

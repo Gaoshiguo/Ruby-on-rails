@@ -1,0 +1,31 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+%script{nonce: content_security_policy_nonce(:script)}
+  :plain
+    $(document).ready(function () {
+      var data = $.parseJSON( "#{escape_javascript(@contacts_json).html_safe}" ),
+          autocompleteInput = $("#contacts-search-input");
+
+      autocompleteInput.autoSuggest(data, {
+        selectedItemProp: "name",
+        searchObjProps: "name",
+        asHtmlID: "contact_ids",
+        retrieveLimit: 10,
+        minChars: 1,
+        keyDelay: 0,
+        startText: "",
+        emptyText: "#{t("no_results")}",
+        preFill: [{name : "#{h params[:name]}",
+                   value : "#{@contact_ids}"}]
+        });
+      autocompleteInput.focus();
+    });
+
+.col-md-6.col-md-offset-3#new_conversation_pane
+  .container-fluid.row
+    %h3
+      = t("conversations.index.new_conversation")
+
+  = render "conversations/new", mobile: true
